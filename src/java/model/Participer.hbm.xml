@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 mai 2016 11:15:03 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Participer" table="Participer" catalog="betfun" optimistic-lock="version">
+        <composite-id name="id" class="model.ParticiperId">
+            <key-property name="id" type="int">
+                <column name="id" />
+            </key-property>
+            <key-property name="idTournaments" type="int">
+                <column name="id_Tournaments" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

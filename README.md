@@ -1,2 +1,2 @@
-# BetFun
-This is a J2E Project for Study 
+# BetFunApp
+This is a project in J2E for school

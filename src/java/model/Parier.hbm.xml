@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 mai 2016 11:15:03 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Parier" table="Parier" catalog="betfun" optimistic-lock="version">
+        <composite-id name="id" class="model.ParierId">
+            <key-property name="id" type="int">
+                <column name="id" />
+            </key-property>
+            <key-property name="idMatchs" type="int">
+                <column name="id_Matchs" />
+            </key-property>
+            <key-property name="idChoices" type="int">
+                <column name="id_Choices" />
+            </key-property>
+        </composite-id>
+        <property name="datePari" type="timestamp">
+            <column name="datePari" length="19" not-null="true" />
+        </property>
+        <property name="value" type="string">
+            <column name="value" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

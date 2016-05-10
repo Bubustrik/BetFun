@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
+        <action name="Login" class="frontOffice.Login">
+            <result>/views/login.jsp</result>
+        </action>
+    </package>
+    
+    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
+        <action name="Home" class="frontOffice.Home">
+            <result>/views/home.jsp</result>
+        </action>
+    </package>
+    
+    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
+        <action name="Account" class="frontOffice.Account">
+            <result>/views/account.jsp</result>
+        </action>
+    </package>
+    
+    
+</struts>
+

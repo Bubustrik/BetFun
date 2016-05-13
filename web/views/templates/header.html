@@ -3,19 +3,60 @@
     <head>
         <title>BetFun</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="resources/css/common.css" type="text/css" media="screen" />
-        <link rel="icon" type="image/x-icon" href="resources/images/betfun.jpg" />
+        <link rel="stylesheet" href="resources/css/common.less" type="text/css" media="screen" />
+        <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="resources/css/bootstrap-theme.css" type="text/css" media="screen" />
+        
+        <link rel="icon" type="image/x-icon" href="resources/images/betfunFlav.png" />
+        
+        <!--   Insert bootstrap.min.js from internet   -->    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+        crossorigin="anonymous"></script>
+        
     </head>
 
     <body>
 
         <header>
-            <ul>
-                <li>
-                    <a href="/home.jsp">
-                        <img src="resources/images/betfun.png"/>
-                    </a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-custom navbar-fixed-top menu-top" role="navigation">
+                <div class="navbar-header">
+                    
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                          <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#page-top">
+                        </a>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+
+                          <li>
+                            <a class="page-scroll btn btn-primary" href="#nextMatch">Prochains matchs</a>
+                          </li>
+                          <li>
+                            <a class="page-scroll btn btn-danger" href="#download">Résultats</a>
+                          </li>
+                          <li>
+
+                          </li>
+                        </ul>
+                    </div>
+                    
+                    <ul>
+                        <li>
+                            <a href="/home.jsp" class="btn btn-primary">
+                                <img src="resources/images/betfun.png"/>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            
+            </nav>
         </header>
     

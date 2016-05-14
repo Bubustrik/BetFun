@@ -11,9 +11,17 @@
                 
             </div>
         </section>
-        <section class="homePict">
-            
-
+        <section class="start">
+            <div class="container">
+                <div class="homeContent">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="start">
+            <div class="homePict2">
+                
+            </div>
         </section>
 
 

@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    //background-image: url(../images/pattern.png);
+}
+
+a {
+    color: wheat;
 }
 
 .clear {
@@ -12,18 +15,58 @@
     margin-top: 3px;
 }
 
+.copyright {
+    //margin-top: 83px;
+    padding-top: 83px;
+    
+}
+
+div .copyright p {
+    color: whitesmoke;
+    float: right;
+    padding-right: 10px;
+    margin: -1px;
+}
+
+div .footer-list a {
+    color: wheat;
+    padding-right: 25px;
+    font-size: 15px;
+}
+
+div .footer-list a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul.footer-list {
+    margin: 0;
+}
+
+div .footer-list li {
+    display: inline-block;
+}
+
 footer {
     width: 100%;
-    height: 200px;
-    background-image: linear-gradient(transparent, black);    //rgba(0,0,0,0.1);
-    margin-top: -200px;
-    //background-image: url(../images/pattern.png);
+    height: 150px;
+    background-image: linear-gradient(transparent, black);
+    margin-top: -150px;
+}
+
+.footer-bottom {
+    text-align: center;
+    height: inherit;
+}
+
+html {
+    background-color: black;
 }
 
 .homeContent {
     background-color: rgba(0,0,0,0.3);
     margin-top: 110px;
-    height: 700px;
+    height: 750px;
     border-radius: 3px;
 }
 
@@ -45,6 +88,14 @@ footer {
     margin: 0px 0px 0px 2px;
     padding: 4px;
     height: 60px;
+}
+
+.imageFooter {
+    background-image: url(../images/betfun.png);
+    height: 125px;
+    background-repeat: no-repeat;
+    background-size: 44%;
+    //margin-left: 30px;
 }
 
 .menu-top {
@@ -82,20 +133,33 @@ footer {
     box-shadow: none;
     background-color: transparent;
     color: white;
-    margin-right: 5px;
+    margin-right: 10px;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    border-left: 1px solid #b8c7ce;
+    border-right: 1px solid #b8c7ce;
+    
 }
 
 .nav li .btn:hover {
-    background-color: rgba(0,0,0,0.3);
-    border: 1px solid #b8c7ce;
-    border-radius: 2px;
-    color: #b8c7ce;
+    background-color: rgba(250,250,250,0.9);
+    //color: #b8c7ce;
+    color: black;
+}
+
+.nav > li > a {
+    border-radius: 0;
+}
+
+.nav > li > a:hover {
+    border: 1px solid rgba(0,0,0,0.2);
+    
 }
 
 .start {
-    height: 920px;
+    height: 1000px;
     background-image: url(../images/pattern.png);
 }
+
+@media screen 

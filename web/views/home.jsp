@@ -6,7 +6,7 @@
         <%@include file="templates/header.html" %>
 
 
-        <section class="start">
+        <section class="homeSection">
             <div class="homePict">
                 <div class="homefilter">
                     <div class="container homeFirstCont">
@@ -58,14 +58,80 @@
                 </div>
             </div>
         </section>
-        <section class="start">
+        
+        <section class="homeSection">
+            <div class="absoluTitle">
+                <h2>PARIS EN COURS</h2>
+            </div>
             <div class="container">
                 <div class="homeContent">
+                    <div class="">
+                        <div class="col-lg-3 col-md-6 homeEncartMiddle">
+                            <div class="homeEncardParis">
+                                <p class="first">JOUEUR 1</p>
+                                <a href="#">PARIER</a>
+                                <p class="second">JOUEUR 2</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 homeEncartMiddle">
+                            <div class="homeEncardParis">
+                                <p class="first">JOUEUR 1</p>
+                                <a href="#">PARIER</a>
+                                <p class="second">JOUEUR 2</p>
+                            </div>
+                        </div>
                     
+                        <div class="col-lg-3 col-md-6 homeEncartMiddle">
+                            <div class="homeEncardParis">
+                                <p class="first">JOUEUR 1</p>
+                                <a href="#">PARIER</a>
+                                <p class="second">JOUEUR 2</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 homeEncartMiddle">
+                            <div class="homeEncardParis">
+                                <p class="first">JOUEUR 1</p>
+                                <a href="#">PARIER</a>
+                                <p class="second">JOUEUR 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="">
+                        <div class="col-lg-3 col-md-6 homeEncartMiddle">
+                            <div class="homeEncardParis">
+                                <p class="first">JOUEUR 1</p>
+                                <a href="#">PARIER</a>
+                                <p class="second">JOUEUR 2</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 homeEncartMiddle">
+                            <div class="homeEncardParis">
+                                <p class="first">JOUEUR 1</p>
+                                <a href="#">PARIER</a>
+                                <p class="second">JOUEUR 2</p>
+                            </div>
+                        </div>                
+                        <div class="col-lg-3 col-md-6 homeEncartMiddle">
+                            <div class="homeEncardParis">
+                                <p class="first">JOUEUR 1</p>
+                                <a href="#">PARIER</a>
+                                <p class="second">JOUEUR 2</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 homeEncartMiddle">
+                            <div class="homeEncardParis">
+                                <p class="first">JOUEUR 1</p>
+                                <a href="#">PARIER</a>
+                                <p class="second">JOUEUR 2</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="start">
+        
+        <section class="homeSection">
             <div class="homePict2">
                 <div class="container homeContSecond">
                     <div class="col-lg-12">
@@ -73,7 +139,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="homeEncartSecond">
-                            <div class="homeEncardParis">
+                            <div class="homeEncardTournois">
                                 <div class="col-lg-3">
                                     <p>
                                         JOUEUR 1
@@ -94,7 +160,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="homeEncardParis">
+                            <div class="homeEncardTournois">
                                 <div class="col-lg-3">
                                     <p>
                                         JOUEUR 1
@@ -115,7 +181,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="homeEncardParis">
+                            <div class="homeEncardTournois">
                                 <div class="col-lg-3">
                                     <p>
                                         JOUEUR 1
@@ -136,7 +202,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="homeEncardParis">
+                            <div class="homeEncardTournois">
                                 <div class="col-lg-3">
                                     <p>
                                         JOUEUR 1
@@ -161,7 +227,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="homeEncartSecond">
-                            <div class="homeEncardParis">
+                            <div class="homeEncardTournois">
                                 <div class="col-lg-3">
                                     <p>
                                         JOUEUR 1
@@ -182,7 +248,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="homeEncardParis">
+                            <div class="homeEncardTournois">
                                 <div class="col-lg-3">
                                     <p>
                                         JOUEUR 1
@@ -203,7 +269,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="homeEncardParis">
+                            <div class="homeEncardTournois">
                                 <div class="col-lg-3">
                                     <p>
                                         JOUEUR 1
@@ -224,7 +290,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="homeEncardParis">
+                            <div class="homeEncardTournois">
                                 <div class="col-lg-3">
                                     <p>
                                         JOUEUR 1

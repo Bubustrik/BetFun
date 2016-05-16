@@ -1,6 +1,6 @@
 
 <!-- Import header -->
-        <%@include file="templates/header.html" %>
+        <%@include file="templates/header.jsp" %>
 
 
         <section class="aboutSect">

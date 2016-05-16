@@ -44,9 +44,13 @@
                                 <input />
                             </div>
                             
-                            <a class="btn">Se connecter</a>
-                            <hr>
-                            <a id="inscription" href="#">Créer un compte !</a>
+                            <a class="btn" style="margin-bottom: 8px;">Se connecter</a>
+                            
+                            <input type="checkbox" id="stayConnected" style="padding-top: 5px;">
+                            <label for="stayConnected">Restez connecté</label>
+                            
+                            <hr id="InscriptSecondHr">
+                            <a id="inscription" href="#">Se créer un compte</a>
                             <br />
                             <br />
                         </div>
@@ -63,7 +67,187 @@
         </section>
         <section class="start">
             <div class="homePict2">
-                
+                <div class="container homeContSecond">
+                    <div class="col-lg-12">
+                        <h2>LES TOURNOIS</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="homeEncartSecond">
+                            <div class="homeEncardParis">
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 1
+                                    </p>
+                                    <p>
+                                        Team : LesCardeSup
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-top: 33px;">
+                                    <a href="#">PARIER</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 2
+                                    </p>
+                                    <p>
+                                        Team : AceTeam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="homeEncardParis">
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 1
+                                    </p>
+                                    <p>
+                                        Team : LesCardeSup
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-top: 33px;">
+                                    <a href="#">PARIER</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 2
+                                    </p>
+                                    <p>
+                                        Team : AceTeam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="homeEncardParis">
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 1
+                                    </p>
+                                    <p>
+                                        Team : LesCardeSup
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-top: 33px;">
+                                    <a href="#">PARIER</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 2
+                                    </p>
+                                    <p>
+                                        Team : AceTeam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="homeEncardParis">
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 1
+                                    </p>
+                                    <p>
+                                        Team : LesCardeSup
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-top: 33px;">
+                                    <a href="#">PARIER</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 2
+                                    </p>
+                                    <p>
+                                        Team : AceTeam
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="homeEncartSecond">
+                            <div class="homeEncardParis">
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 1
+                                    </p>
+                                    <p>
+                                        Team : LesCardeSup
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-top: 33px;">
+                                    <a href="#">PARIER</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 2
+                                    </p>
+                                    <p>
+                                        Team : AceTeam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="homeEncardParis">
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 1
+                                    </p>
+                                    <p>
+                                        Team : LesCardeSup
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-top: 33px;">
+                                    <a href="#">PARIER</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 2
+                                    </p>
+                                    <p>
+                                        Team : AceTeam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="homeEncardParis">
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 1
+                                    </p>
+                                    <p>
+                                        Team : LesCardeSup
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-top: 33px;">
+                                    <a href="#">PARIER</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 2
+                                    </p>
+                                    <p>
+                                        Team : AceTeam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="homeEncardParis">
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 1
+                                    </p>
+                                    <p>
+                                        Team : LesCardeSup
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-top: 33px;">
+                                    <a href="#">PARIER</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p>
+                                        JOUEUR 2
+                                    </p>
+                                    <p>
+                                        Team : AceTeam
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

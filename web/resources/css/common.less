@@ -85,8 +85,30 @@ html {
     background-color: rgba(0,0,0,0.1);
 }
 
-.homeFirstCont {
+.homeFirstCont, .homeContSecond {
     padding-top: 220px;
+}
+
+.homeContSecond h2 {
+    color: wheat;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.homeEncardParis {
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+    height: 85px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.homeEncardParis:hover {
+    border: 1px solid rgba(0,0,0,0.7);
+    color: wheat;
+    //background-color: rgba(0,0,0,0.3);
 }
 
 .homeFirstCont h1 {
@@ -118,6 +140,42 @@ html {
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+}
+
+.homeEncartSecond {
+    background-color: rgba(255,255,255,0.3);
+    height: 400px;
+    //height: 100%;
+    border-radius: 3px;
+    padding: 15px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.homeEncartSecond:hover {
+    background-color: rgba(255,255,255,0.5);
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.homeEncardParis a {
+    padding: 15px;
+    border: 1px solid wheat;
+}
+
+.homeEncardParis a:hover {
+    color: black;
+    background-color: wheat;
+    text-decoration: none;
+    .homeEncardParis {
+        border-color: wheat;
+    }
+}
+
+.homeEncardParis p {
+    padding-top: 4px;
 }
 
 .homeInscription {
@@ -208,6 +266,11 @@ html {
     //margin-left: 30px;
 }
 
+hr#InscriptSecondHr {
+    margin: 0;
+    padding: 0;
+}
+
 .menu-top {
     
     width: 100%;
@@ -270,5 +333,3 @@ html {
     height: 980px;
     background-image: url(../images/pattern.png);
 }
-
-@media screen 

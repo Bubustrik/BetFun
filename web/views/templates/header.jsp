@@ -19,7 +19,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
         crossorigin="anonymous"></script>
-        
+        <%@ taglib prefix="s" uri="/struts-tags" %>
     </head>
 
     <body>
@@ -39,10 +39,10 @@
                 <div class="container contMenu">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a class="btn" href="#">Paris</a>
+                            <a class="btn" href="#2ndSect">Paris</a>
                         </li>
                         <li>
-                            <a class="btn" href="#">Tournois</a>
+                            <a class="btn" href="#3rdSect">Tournois</a>
                         </li>
                         <li>
                             <a class="btn" href="#">Classement</a>

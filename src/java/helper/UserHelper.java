@@ -5,7 +5,6 @@ import model.HibernateUtil;
 import model.Users;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 
 /**
  * UserHelper Class

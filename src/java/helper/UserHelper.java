@@ -10,8 +10,6 @@ import model.HibernateUtil;
 import model.Users;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
-
 /**
  *
  * @author Julien
@@ -28,10 +26,22 @@ public class UserHelper {
 
         return allUsers;
     }
-
-    public String getPassword(String login) {
+    
+    public Users getUser(String email) {
         session.beginTransaction();
-        String password = session.createQuery("select password from Users where login like" + login).getQueryString();
+        Users user = (Users) session.createQuery("select password from Users where email like" + email);
+        return user;
+    }
+    
+    public Users getUser(int id) {
+        session.beginTransaction();
+        Users user = (Users) session.createQuery("select password from Users where id =" + id);
+        return user;
+    }
+
+    public String getPassword(String email) {
+        session.beginTransaction();
+        String password = session.createQuery("select password from Users where email like" + email).getQueryString();
         session.getTransaction();
         if (password.isEmpty() )
                 password = "erreur";
@@ -47,7 +57,16 @@ public class UserHelper {
         } catch (HibernateException e) {
             session.getTransaction().rollback();
         }
-        
+    }
+    
+    public void DeleteUsers(int id) {
+        session.beginTransaction();
+        try {
+            session.delete(id);
+            session.getTransaction().commit();
+        } catch (HibernateException e) {
+            session.getTransaction().rollback();
+        }
     }
 
 }

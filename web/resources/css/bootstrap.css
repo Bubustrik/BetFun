@@ -3991,7 +3991,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eee;
+  background-color: rgba(0,0,0,0.2);
 }
 .nav > li.disabled > a {
   color: #777;
@@ -4324,7 +4324,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 0;
+  display: inline-block;
+  display: -webkit-inline-box;
 }
 .navbar-nav > li > a {
   padding-top: 10px;

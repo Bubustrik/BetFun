@@ -317,6 +317,23 @@
             </div>
         </section>
 
+        <!--   Insert bootstrap.min.js from internet   -->    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+        crossorigin="anonymous"></script>
 
+        <script>
+            $('a[href^="#"]').click(function(){
+                var the_id = $(this).attr("href");
+
+                $('html, body').animate({
+                        scrollTop:$(the_id).offset().top
+                }, 'slow');
+                return false;
+            });
+        </script>
+        
         <!-- Import footer -->
         <%@include file="templates/footer.html" %>

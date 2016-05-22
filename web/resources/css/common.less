@@ -98,6 +98,12 @@ html {
     margin-top: 135px;
     height: 750px;
     border-radius: 3px;
+    margin-bottom: 135px;
+}
+
+.homeContSecond {
+    padding-top: 9%;
+    padding-bottom: 10%;
 }
 
 .homefilter {
@@ -106,8 +112,9 @@ html {
     background-color: rgba(0,0,0,0.1);
 }
 
-.homeFirstCont, .homeContSecond {
-    padding-top: 200px;
+.homeFirstCont {
+    padding-top: 9%;
+    padding-bottom: 21%;
 }
 
 .homeContSecond h2 {
@@ -132,7 +139,7 @@ html {
 
 .homeEncardParis a {
     vertical-align: middle;
-    padding: 35px;
+    padding: 15px;
     border: 2px solid wheat;
     border-radius: 3px;
 }
@@ -140,6 +147,7 @@ html {
 .homeEncardParis a:hover {
     color: black;
     background-color: wheat;
+    text-decoration: none;
 }
 
 .homeEncardParis p.first {
@@ -154,10 +162,12 @@ html {
     width: 100%;
     background-color: rgba(0,0,0,0.2);
     border-radius: 3px;
-    height: 85px;
+    height: 10vh;
     margin-bottom: 10px;
     color: whitesmoke;
     text-align: center;
+    display: table;
+    border: 1px solid wheat;
 }
 
 .homeEncardTournois:hover {
@@ -216,10 +226,9 @@ html {
 
 .homeEncartSecond {
     background-color: rgba(255,255,255,0.3);
-    height: 400px;
-    //height: 100%;
+    height: 100%;
     border-radius: 3px;
-    padding: 15px;
+    padding: 25px 25px 15px 25px;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
@@ -286,16 +295,26 @@ html {
     border-radius: 3px;
 }
 
+.homeInscription input:hover {
+    border: 1px solid whitesmoke;
+}
+
 .homeInscription a {
     border: 1px solid wheat;
     background-color: rgba(0,0,0,0);
     width: 100%;
     margin-top: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .homeInscription a:hover {
     background-color: wheat;
     color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .homeInscription a#inscription {
@@ -312,20 +331,21 @@ html {
 
 .homePict {
     background-image: url(../images/home.jpg);
-
-    height: 100%;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
     background-repeat: no-repeat;
 }
 
 .homePict2 {
     background-image: url(../images/home2.jpg);
-
     height: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
 }
 
 .homeSection {
-    height: 980px;
     background-image: url(../images/pattern.png);
 }
 

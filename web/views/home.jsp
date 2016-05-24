@@ -336,4 +336,4 @@
         </script>
         
         <!-- Import footer -->
-        <%@include file="templates/footer.html" %>
+        <%@include file="templates/footer.jsp" %>

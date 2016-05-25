@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="betfun"/>
+  <table-filter match-name="Groups"/>
+  <table-filter match-name="Tournaments"/>
+  <table-filter match-name="Teams"/>
+  <table-filter match-name="Peut_integrer"/>
+  <table-filter match-name="Choices"/>
+  <table-filter match-name="Matchs"/>
+  <table-filter match-name="TypesChoices"/>
+  <table-filter match-name="Users"/>
+  <table-filter match-name="Appartenir"/>
+  <table-filter match-name="Participer"/>
+  <table-filter match-name="Parier"/>
+</hibernate-reverse-engineering>

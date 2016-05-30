@@ -1,12 +1,18 @@
 package model;
-// Generated 10 mai 2016 11:15:02 by Hibernate Tools 4.3.1
+// Generated 30 mai 2016 14:17:35 by Hibernate Tools 4.3.1
 
 
+import java.util.HashSet;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -14,21 +20,28 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="Choices"
-    ,catalog="betfun"
+    ,catalog="betfunpi_BetFun"
 )
 public class Choices  implements java.io.Serializable {
 
 
      private Integer id;
+     private TypesChoices typesChoices;
      private String value;
-     private int idTypesChoices;
+     private Set<Bet> bets = new HashSet<Bet>(0);
 
     public Choices() {
     }
 
-    public Choices(String value, int idTypesChoices) {
+	
+    public Choices(TypesChoices typesChoices, String value) {
+        this.typesChoices = typesChoices;
+        this.value = value;
+    }
+    public Choices(TypesChoices typesChoices, String value, Set<Bet> bets) {
+       this.typesChoices = typesChoices;
        this.value = value;
-       this.idTypesChoices = idTypesChoices;
+       this.bets = bets;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -43,6 +56,16 @@ public class Choices  implements java.io.Serializable {
         this.id = id;
     }
 
+@ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="id_TypesChoices", nullable=false)
+    public TypesChoices getTypesChoices() {
+        return this.typesChoices;
+    }
+    
+    public void setTypesChoices(TypesChoices typesChoices) {
+        this.typesChoices = typesChoices;
+    }
+
     
     @Column(name="value", nullable=false, length=200)
     public String getValue() {
@@ -53,14 +76,13 @@ public class Choices  implements java.io.Serializable {
         this.value = value;
     }
 
-    
-    @Column(name="id_TypesChoices", nullable=false)
-    public int getIdTypesChoices() {
-        return this.idTypesChoices;
+@OneToMany(fetch=FetchType.LAZY, mappedBy="choices")
+    public Set<Bet> getBets() {
+        return this.bets;
     }
     
-    public void setIdTypesChoices(int idTypesChoices) {
-        this.idTypesChoices = idTypesChoices;
+    public void setBets(Set<Bet> bets) {
+        this.bets = bets;
     }
 
 

@@ -1,12 +1,17 @@
 package model;
-// Generated 10 mai 2016 11:15:02 by Hibernate Tools 4.3.1
+// Generated 30 mai 2016 14:17:35 by Hibernate Tools 4.3.1
 
 
+import java.util.HashSet;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -14,7 +19,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="Users"
-    ,catalog="betfun"
+    ,catalog="betfunpi_BetFun"
 )
 public class Users  implements java.io.Serializable {
 
@@ -27,6 +32,8 @@ public class Users  implements java.io.Serializable {
      private String email;
      private Integer scores;
      private boolean isBlocked;
+     private Set<Bet> bets = new HashSet<Bet>(0);
+     private Set<Teams> teamses = new HashSet<Teams>(0);
 
     public Users() {
     }
@@ -40,7 +47,7 @@ public class Users  implements java.io.Serializable {
         this.email = email;
         this.isBlocked = isBlocked;
     }
-    public Users(String lastname, String firstname, boolean isAdmin, boolean isMod, String email, Integer scores, boolean isBlocked) {
+    public Users(String lastname, String firstname, boolean isAdmin, boolean isMod, String email, Integer scores, boolean isBlocked, Set<Bet> bets, Set<Teams> teamses) {
        this.lastname = lastname;
        this.firstname = firstname;
        this.isAdmin = isAdmin;
@@ -48,6 +55,8 @@ public class Users  implements java.io.Serializable {
        this.email = email;
        this.scores = scores;
        this.isBlocked = isBlocked;
+       this.bets = bets;
+       this.teamses = teamses;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -130,6 +139,24 @@ public class Users  implements java.io.Serializable {
     
     public void setIsBlocked(boolean isBlocked) {
         this.isBlocked = isBlocked;
+    }
+
+@OneToMany(fetch=FetchType.LAZY, mappedBy="users")
+    public Set<Bet> getBets() {
+        return this.bets;
+    }
+    
+    public void setBets(Set<Bet> bets) {
+        this.bets = bets;
+    }
+
+@ManyToMany(fetch=FetchType.LAZY, mappedBy="userses")
+    public Set<Teams> getTeamses() {
+        return this.teamses;
+    }
+    
+    public void setTeamses(Set<Teams> teamses) {
+        this.teamses = teamses;
     }
 
 

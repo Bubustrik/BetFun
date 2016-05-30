@@ -1,13 +1,17 @@
 package model;
-// Generated 10 mai 2016 11:15:02 by Hibernate Tools 4.3.1
+// Generated 30 mai 2016 14:17:35 by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -17,7 +21,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="Tournaments"
-    ,catalog="betfun"
+    ,catalog="betfunpi_BetFun"
 )
 public class Tournaments  implements java.io.Serializable {
 
@@ -28,6 +32,7 @@ public class Tournaments  implements java.io.Serializable {
      private Date startDate;
      private Date endDate;
      private Date resultDate;
+     private Set<Groups> groupses = new HashSet<Groups>(0);
 
     public Tournaments() {
     }
@@ -39,12 +44,13 @@ public class Tournaments  implements java.io.Serializable {
         this.endDate = endDate;
         this.resultDate = resultDate;
     }
-    public Tournaments(String name, String description, Date startDate, Date endDate, Date resultDate) {
+    public Tournaments(String name, String description, Date startDate, Date endDate, Date resultDate, Set<Groups> groupses) {
        this.name = name;
        this.description = description;
        this.startDate = startDate;
        this.endDate = endDate;
        this.resultDate = resultDate;
+       this.groupses = groupses;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -107,6 +113,15 @@ public class Tournaments  implements java.io.Serializable {
     
     public void setResultDate(Date resultDate) {
         this.resultDate = resultDate;
+    }
+
+@ManyToMany(fetch=FetchType.LAZY, mappedBy="tournamentses")
+    public Set<Groups> getGroupses() {
+        return this.groupses;
+    }
+    
+    public void setGroupses(Set<Groups> groupses) {
+        this.groupses = groupses;
     }
 
 

@@ -1,13 +1,17 @@
 package model;
-// Generated 10 mai 2016 11:15:02 by Hibernate Tools 4.3.1
+// Generated 30 mai 2016 14:17:35 by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -17,7 +21,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="Groups"
-    ,catalog="betfun"
+    ,catalog="betfunpi_BetFun"
 )
 public class Groups  implements java.io.Serializable {
 
@@ -26,6 +30,8 @@ public class Groups  implements java.io.Serializable {
      private String name;
      private Date dateCreation;
      private String description;
+     private Set<Tournaments> tournamentses = new HashSet<Tournaments>(0);
+     private Set<Matchs> matchses = new HashSet<Matchs>(0);
 
     public Groups() {
     }
@@ -35,10 +41,12 @@ public class Groups  implements java.io.Serializable {
         this.name = name;
         this.dateCreation = dateCreation;
     }
-    public Groups(String name, Date dateCreation, String description) {
+    public Groups(String name, Date dateCreation, String description, Set<Tournaments> tournamentses, Set<Matchs> matchses) {
        this.name = name;
        this.dateCreation = dateCreation;
        this.description = description;
+       this.tournamentses = tournamentses;
+       this.matchses = matchses;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -81,6 +89,24 @@ public class Groups  implements java.io.Serializable {
     
     public void setDescription(String description) {
         this.description = description;
+    }
+
+@ManyToMany(fetch=FetchType.LAZY, mappedBy="groupses")
+    public Set<Tournaments> getTournamentses() {
+        return this.tournamentses;
+    }
+    
+    public void setTournamentses(Set<Tournaments> tournamentses) {
+        this.tournamentses = tournamentses;
+    }
+
+@ManyToMany(fetch=FetchType.LAZY, mappedBy="groupses")
+    public Set<Matchs> getMatchses() {
+        return this.matchses;
+    }
+    
+    public void setMatchses(Set<Matchs> matchses) {
+        this.matchses = matchses;
     }
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 10 mai 2016 11:15:03 by Hibernate Tools 4.3.1 -->
+<!-- Generated 30 mai 2016 14:17:36 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="model.Parier" table="Parier" catalog="betfun" optimistic-lock="version">
-        <composite-id name="id" class="model.ParierId">
+    <class name="model.Bet" table="Bet" catalog="betfunpi_BetFun" optimistic-lock="version">
+        <composite-id name="id" class="model.BetId">
             <key-property name="id" type="int">
                 <column name="id" />
             </key-property>
@@ -15,6 +15,15 @@
                 <column name="id_Choices" />
             </key-property>
         </composite-id>
+        <many-to-one name="choices" class="model.Choices" update="false" insert="false" fetch="select">
+            <column name="id_Choices" not-null="true" />
+        </many-to-one>
+        <many-to-one name="matchs" class="model.Matchs" update="false" insert="false" fetch="select">
+            <column name="id_Matchs" not-null="true" />
+        </many-to-one>
+        <many-to-one name="users" class="model.Users" update="false" insert="false" fetch="select">
+            <column name="id" not-null="true" />
+        </many-to-one>
         <property name="datePari" type="timestamp">
             <column name="datePari" length="19" not-null="true" />
         </property>

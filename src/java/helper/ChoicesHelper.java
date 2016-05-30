@@ -19,4 +19,12 @@ public class ChoicesHelper {
 
         return allChoices;
     }
+    
+    public Choices getChoices(int id) {
+        session.beginTransaction();
+        Choices choices = (Choices) session.createQuery("from Choices where id=" + id);
+        session.getTransaction();
+        
+        return choices;
+    }
 }

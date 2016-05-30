@@ -1,13 +1,17 @@
 package model;
-// Generated 10 mai 2016 11:15:02 by Hibernate Tools 4.3.1
+// Generated 30 mai 2016 14:17:35 by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -17,7 +21,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="Teams"
-    ,catalog="betfun"
+    ,catalog="betfunpi_BetFun"
 )
 public class Teams  implements java.io.Serializable {
 
@@ -26,6 +30,7 @@ public class Teams  implements java.io.Serializable {
      private String name;
      private String description;
      private Date dateCreation;
+     private Set<Users> userses = new HashSet<Users>(0);
 
     public Teams() {
     }
@@ -35,10 +40,11 @@ public class Teams  implements java.io.Serializable {
         this.name = name;
         this.dateCreation = dateCreation;
     }
-    public Teams(String name, String description, Date dateCreation) {
+    public Teams(String name, String description, Date dateCreation, Set<Users> userses) {
        this.name = name;
        this.description = description;
        this.dateCreation = dateCreation;
+       this.userses = userses;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -81,6 +87,15 @@ public class Teams  implements java.io.Serializable {
     
     public void setDateCreation(Date dateCreation) {
         this.dateCreation = dateCreation;
+    }
+
+@ManyToMany(fetch=FetchType.LAZY, mappedBy="teamses")
+    public Set<Users> getUserses() {
+        return this.userses;
+    }
+    
+    public void setUserses(Set<Users> userses) {
+        this.userses = userses;
     }
 
 

@@ -1,12 +1,16 @@
 package model;
-// Generated 10 mai 2016 11:15:02 by Hibernate Tools 4.3.1
+// Generated 30 mai 2016 14:17:35 by Hibernate Tools 4.3.1
 
 
+import java.util.HashSet;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -14,7 +18,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="TypesChoices"
-    ,catalog="betfun"
+    ,catalog="betfunpi_BetFun"
 )
 public class TypesChoices  implements java.io.Serializable {
 
@@ -22,6 +26,7 @@ public class TypesChoices  implements java.io.Serializable {
      private Integer id;
      private String name;
      private String description;
+     private Set<Choices> choiceses = new HashSet<Choices>(0);
 
     public TypesChoices() {
     }
@@ -30,9 +35,10 @@ public class TypesChoices  implements java.io.Serializable {
     public TypesChoices(String name) {
         this.name = name;
     }
-    public TypesChoices(String name, String description) {
+    public TypesChoices(String name, String description, Set<Choices> choiceses) {
        this.name = name;
        this.description = description;
+       this.choiceses = choiceses;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -65,6 +71,15 @@ public class TypesChoices  implements java.io.Serializable {
     
     public void setDescription(String description) {
         this.description = description;
+    }
+
+@OneToMany(fetch=FetchType.LAZY, mappedBy="typesChoices")
+    public Set<Choices> getChoiceses() {
+        return this.choiceses;
+    }
+    
+    public void setChoiceses(Set<Choices> choiceses) {
+        this.choiceses = choiceses;
     }
 
 

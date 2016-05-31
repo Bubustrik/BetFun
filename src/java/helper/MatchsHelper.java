@@ -40,8 +40,8 @@ public class MatchsHelper {
     }
     
     public Matchs getMatch(int id) {
-       org.hibernate.Transaction tx = session.beginTransaction();
-        Matchs tournament = (Matchs) session.createQuery("from Tournaments where id =" + id).uniqueResult();
+        org.hibernate.Transaction tx = session.beginTransaction();
+        Matchs tournament = (Matchs) session.createQuery("from Matchs where id =" + id).uniqueResult();
         return tournament;
     }
     

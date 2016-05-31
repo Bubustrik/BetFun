@@ -1,64 +1,69 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package helper;
 
 import java.util.List;
-import model.Choices;
 import model.HibernateUtil;
+import model.Teams;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 
 /**
- * ChoicesHelper Class
+ *
+ * @author Julien
  */
-public class ChoicesHelper {
+public class TeamsHelper {
     
     Session session;
 
-    public ChoicesHelper() {
+    public TeamsHelper() {
          this.session = HibernateUtil.getSessionFactory().getCurrentSession();
     }
     
-    public List<Choices> getAllChoices () {
+    public List<Teams> getAllTeams () {
         session.beginTransaction();
-        List<Choices> allChoices = session.createQuery("from Choices").list();
+        List<Teams> allTeams = session.createQuery("from Teams").list();
         session.getTransaction().commit();
 
-        return allChoices;
+        return allTeams;
     }
     
-    public Choices getChoices(int id) {
+    public Teams getTeams(int id) {
         session.beginTransaction();
-        Choices choices = (Choices) session.createQuery("from Choices where id=" + id).uniqueResult();
+        Teams team = (Teams) session.createQuery("from Teams where id=" + id).uniqueResult();
         session.getTransaction();
-        
-        return choices;
+        return team;
     }
     
-     public void addChoices (Choices choice) {
+     public void addTeams(Teams team) {
         session.beginTransaction();
         try {
-            session.save(choice);
+            session.save(team);
             session.getTransaction().commit();
         } catch (HibernateException e) {
             session.getTransaction().rollback();
         }
     }
     
-    public void updateChoices (Choices choice) {
+    public void updateTeams (Teams team) {
         session.beginTransaction();
         try {
-            session.update(choice);
+            session.update(team);
             session.getTransaction().commit();
         } catch (HibernateException e) {
             session.getTransaction().rollback();
         }
     }
     
-    public void deleteChoices (int id) {
+    public void deleteTeams (int id) {
         session.beginTransaction();
-        Choices choice = new Choices();
-        choice.setId(id);
+        Teams team = new Teams();
+        team.setId(id);
         try {
-            session.delete(choice);
+            session.delete(team);
             session.getTransaction().commit();
         } catch (HibernateException e) {
             session.getTransaction().rollback();

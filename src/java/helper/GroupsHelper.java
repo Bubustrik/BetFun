@@ -1,64 +1,69 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package helper;
 
 import java.util.List;
-import model.Choices;
+import model.Groups;
 import model.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 
 /**
- * ChoicesHelper Class
+ *
+ * @author Julien
  */
-public class ChoicesHelper {
+public class GroupsHelper {
     
-    Session session;
+     Session session;
 
-    public ChoicesHelper() {
+    public GroupsHelper() {
          this.session = HibernateUtil.getSessionFactory().getCurrentSession();
     }
     
-    public List<Choices> getAllChoices () {
+    public List<Groups> getAllGroups () {
         session.beginTransaction();
-        List<Choices> allChoices = session.createQuery("from Choices").list();
+        List<Groups> allGroups = session.createQuery("from Groups").list();
         session.getTransaction().commit();
 
-        return allChoices;
+        return allGroups;
     }
     
-    public Choices getChoices(int id) {
+    public Groups getGroups(int id) {
         session.beginTransaction();
-        Choices choices = (Choices) session.createQuery("from Choices where id=" + id).uniqueResult();
+        Groups groups = (Groups) session.createQuery("from Groups where id=" + id).uniqueResult();
         session.getTransaction();
-        
-        return choices;
+        return groups;
     }
     
-     public void addChoices (Choices choice) {
+     public void addGroup (Groups group) {
         session.beginTransaction();
         try {
-            session.save(choice);
+            session.save(group);
             session.getTransaction().commit();
         } catch (HibernateException e) {
             session.getTransaction().rollback();
         }
     }
     
-    public void updateChoices (Choices choice) {
+    public void updateGroup (Groups group) {
         session.beginTransaction();
         try {
-            session.update(choice);
+            session.update(group);
             session.getTransaction().commit();
         } catch (HibernateException e) {
             session.getTransaction().rollback();
         }
     }
     
-    public void deleteChoices (int id) {
+    public void deleteGroup (int id) {
         session.beginTransaction();
-        Choices choice = new Choices();
-        choice.setId(id);
+        Groups group = new Groups();
+        group.setId(id);
         try {
-            session.delete(choice);
+            session.delete(group);
             session.getTransaction().commit();
         } catch (HibernateException e) {
             session.getTransaction().rollback();

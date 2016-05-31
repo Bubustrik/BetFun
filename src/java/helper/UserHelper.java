@@ -9,9 +9,13 @@ import org.hibernate.Session;
 /**
  * UserHelper Class
  */
-public class UserHelper
-{
-    Session session = (Session) HibernateUtil.getSessionFactory();
+public class UserHelper {
+
+    Session session;
+    
+    public UserHelper () {
+     this.session = HibernateUtil.getSessionFactory().getCurrentSession();
+    }
 
     public List<Users> getAllUser() {
 
@@ -21,13 +25,13 @@ public class UserHelper
 
         return allUsers;
     }
-    
+
     public Users getUser(String email) {
         session.beginTransaction();
         Users user = (Users) session.createQuery("select password from Users where email like" + email);
         return user;
     }
-    
+
     public Users getUser(int id) {
         session.beginTransaction();
         Users user = (Users) session.createQuery("select password from Users where id =" + id);
@@ -38,22 +42,23 @@ public class UserHelper
         session.beginTransaction();
         String password = session.createQuery("select password from Users where email like" + email).getQueryString();
         session.getTransaction();
-        if (password.isEmpty() )
-                password = "erreur";
+        if (password.isEmpty()) {
+            password = "erreur";
+        }
         return password;
     }
 
     public void saveOrUpdateUsers(Users users) {
-        
+
         session.beginTransaction();
         try {
-        session.saveOrUpdate(users);
-        session.getTransaction().commit();
+            session.saveOrUpdate(users);
+            session.getTransaction().commit();
         } catch (HibernateException e) {
             session.getTransaction().rollback();
         }
     }
-    
+
     public void DeleteUsers(int id) {
         session.beginTransaction();
         try {

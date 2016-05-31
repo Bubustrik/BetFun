@@ -15,10 +15,6 @@ public class HomeAction extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
-        /*TournamentsHelper th = new TournamentsHelper();
-        Tournaments t = th.getTournaments(1);
-        System.out.println("TTTTTTTTTT"+ t.getName());*/
-        System.out.println("TEST");
        return SUCCESS;
     }
 

@@ -8,7 +8,7 @@
     <property name="hibernate.connection.username">betfunpi_epsi</property>
     <property name="hibernate.connection.password">epsi2016</property>
     <property name="hibernate.show_sql">true</property>
-    <property name="hibernate.default_entity_mode">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
     <mapping resource="model/Groups.hbm.xml"/>
     <mapping resource="model/Matchs.hbm.xml"/>
     <mapping resource="model/Choices.hbm.xml"/>

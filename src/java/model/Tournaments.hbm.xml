@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 30 mai 2016 14:17:36 by Hibernate Tools 4.3.1 -->
+<!-- Generated 30 mai 2016 15:21:51 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="model.Tournaments" table="Tournaments" catalog="betfunpi_BetFun" optimistic-lock="version">
         <id name="id" type="java.lang.Integer">
@@ -23,13 +23,11 @@
         <property name="resultDate" type="timestamp">
             <column name="resultDate" length="19" not-null="true" />
         </property>
-        <set name="groupses" table="Participate" inverse="true" lazy="true" fetch="select">
+        <set name="groupses" table="Groups" inverse="true" lazy="true" fetch="select">
             <key>
                 <column name="id_Tournaments" not-null="true" />
             </key>
-            <many-to-many entity-name="model.Groups">
-                <column name="id" not-null="true" />
-            </many-to-many>
+            <one-to-many class="model.Groups" />
         </set>
     </class>
 </hibernate-mapping>

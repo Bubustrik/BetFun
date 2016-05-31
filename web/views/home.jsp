@@ -1,4 +1,4 @@
-
+        <%@page contentType="text/html; charset=UTF-8" %>
         <!-- Import header -->
         <%@include file="templates/header.jsp" %>
 
@@ -13,15 +13,15 @@
                                 <br />
                                 <div class="homefirstEncart">
                                     <p>
-                                        BetFun est un site de paris en ligne spécialement conçu
+                                        BetFun est un site de paris en ligne spÃ©cialement conÃ§u
                                         pour les entreprises. Il ne s'agit pas d'un site de paris
                                         d'argent traditionnel.
                                     </p>
                                     <br />
                                     <p>
-                                        BetFun vous permettra de miser de petits objets, des corvés,
-                                        des petits pains... Ici, vous pouvez vous permettre d'être
-                                        créatif et de parier sur la chemise que va porter un collègue
+                                        BetFun vous permettra de miser de petits objets, des corvÃ©s,
+                                        des petits pains... Ici, vous pouvez vous permettre d'Ãªtre
+                                        crÃ©atif et de parier sur la chemise que va porter un collÃ¨gue
                                         le lundi suivant.
                                     </p>
                                 </div>
@@ -44,10 +44,10 @@
                                 <a class="btn" style="margin-bottom: 8px;">Se connecter</a>
 
                                 <input type="checkbox" id="stayConnected" style="padding-top: 5px;">
-                                <label for="stayConnected">Restez connecté</label>
+                                <label for="stayConnected">Restez connectÃ©</label>
 
                                 <hr id="InscriptSecondHr">
-                                <a id="inscription" href="#">Se créer un compte</a>
+                                <a id="inscription" href="#">Se crÃ©er un compte</a>
                                 <br />
                                 <br />
                             </div>

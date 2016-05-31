@@ -8,15 +8,23 @@ import org.hibernate.Session;
 /**
  * ChoicesHelper Class
  */
-public class ChoicesHelper
-{
+public class ChoicesHelper {
+    
     Session session = (Session) HibernateUtil.getSessionFactory();
-     
+    
     public List<Choices> getAllChoices () {
         session.beginTransaction();
         List<Choices> allChoices = session.createQuery("from Choices").list();
         session.getTransaction().commit();
 
         return allChoices;
+    }
+    
+    public Choices getChoices(int id) {
+        session.beginTransaction();
+        Choices choices = (Choices) session.createQuery("from Choices where id=" + id);
+        session.getTransaction();
+        
+        return choices;
     }
 }

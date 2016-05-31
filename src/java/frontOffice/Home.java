@@ -12,6 +12,7 @@ public class Home extends ActionSupport
     private String login;
     private String password;
 
+    
     public String execute() throws Exception {
         return SUCCESS;
     }

@@ -4,20 +4,18 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/betfun</property>
-    <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.password">root</property>
+    <property name="hibernate.connection.url">jdbc:mysql://149.202.181.42:3306/betfunpi_BetFun</property>
+    <property name="hibernate.connection.username">betfunpi_epsi</property>
+    <property name="hibernate.connection.password">epsi2016</property>
     <property name="hibernate.show_sql">true</property>
-    <mapping resource="model/PeutIntegrer.hbm.xml"/>
+    <property name="hibernate.default_entity_mode">true</property>
+    <mapping resource="model/Groups.hbm.xml"/>
     <mapping resource="model/Matchs.hbm.xml"/>
     <mapping resource="model/Choices.hbm.xml"/>
-    <mapping resource="model/Participer.hbm.xml"/>
     <mapping resource="model/Users.hbm.xml"/>
     <mapping resource="model/TypesChoices.hbm.xml"/>
+    <mapping resource="model/Bet.hbm.xml"/>
     <mapping resource="model/Tournaments.hbm.xml"/>
-    <mapping resource="model/Appartenir.hbm.xml"/>
-    <mapping resource="model/Groups.hbm.xml"/>
-    <mapping resource="model/Parier.hbm.xml"/>
     <mapping resource="model/Teams.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

@@ -2,18 +2,19 @@ package frontOffice;
 
 import org.junit.After;
 import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
  * @author PierreP
  */
-public class HomeTest {
+public class HomeActionTest {
     
-    public HomeTest() {
+    public HomeActionTest() {
     }
     
     @BeforeClass
@@ -38,7 +39,7 @@ public class HomeTest {
     @Test
     public void testGetLogin() {
         System.out.println("getLogin");
-        Home instance = new Home();
+        HomeAction instance = new HomeAction();
         String expResult = "Login1";
         String result = instance.getLogin();
         assertEquals(expResult, result);
@@ -51,7 +52,7 @@ public class HomeTest {
     @Test
     public void testGetPassword() {
         System.out.println("getPassword");
-        Home instance = new Home();
+        HomeAction instance = new HomeAction();
         String expResult = "motdepasse";
         String result = instance.getPassword();
         assertEquals(expResult, result);
@@ -65,7 +66,7 @@ public class HomeTest {
     public void testSetLogin() {
         System.out.println("setLogin");
         String login = "Login1";
-        Home instance = new Home();
+        HomeAction instance = new HomeAction();
         instance.setLogin(login);
         fail("Fail : setLogin");
     }
@@ -77,7 +78,7 @@ public class HomeTest {
     public void testSetPassword() {
         System.out.println("setPassword");
         String password = "motdepasse";
-        Home instance = new Home();
+        HomeAction instance = new HomeAction();
         instance.setPassword(password); 
         fail("Fail : setPassword");
     }

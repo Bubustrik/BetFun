@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 10 mai 2016 11:15:03 by Hibernate Tools 4.3.1 -->
+<!-- Generated 30 mai 2016 15:21:51 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="model.Groups" table="Groups" catalog="betfun" optimistic-lock="version">
+    <class name="model.Groups" table="Groups" catalog="betfunpi_BetFun" optimistic-lock="version">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
             <generator class="identity" />
         </id>
+        <many-to-one name="tournaments" class="model.Tournaments" fetch="select">
+            <column name="id_Tournaments" not-null="true" />
+        </many-to-one>
         <property name="name" type="string">
             <column name="name" length="100" not-null="true" />
         </property>
@@ -17,5 +20,11 @@
         <property name="description" type="string">
             <column name="description" />
         </property>
+        <set name="matchses" table="Matchs" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_Groups" not-null="true" />
+            </key>
+            <one-to-many class="model.Matchs" />
+        </set>
     </class>
 </hibernate-mapping>

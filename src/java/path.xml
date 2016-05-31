@@ -5,24 +5,17 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
-        <action name="Login" class="frontOffice.Login">
-            <result>/views/login.jsp</result>
-        </action>
-    </package>
-    
-    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
-        <action name="Home" class="frontOffice.Home">
+    <package name="frontOffice" extends="struts-default" namespace="/">
+        <action name="Home" class="frontOffice.HomeAction" >
             <result>/views/home.jsp</result>
         </action>
-    </package>
-    
-    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
-        <action name="Account" class="frontOffice.Account">
+        <action name="Login" class="frontOffice.LoginAction">
+            <result>/views/login.jsp</result>
+        </action>
+        <action name="Account" class="frontOffice.AccountAction">
             <result>/views/account.jsp</result>
         </action>
     </package>
-    
     
 </struts>
 

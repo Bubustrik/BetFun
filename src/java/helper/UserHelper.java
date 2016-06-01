@@ -43,9 +43,51 @@ public class UserHelper {
         String password = session.createQuery("select password from Users where email like" + email).getQueryString();
         session.getTransaction();
         if (password.isEmpty()) {
-            password = "erreur";
+            password = "error";
         }
         return password;
+    }
+    
+    //Return if the user is a moderator or not
+    public String isModerator(int id){
+        session.beginTransaction();
+        String bModerator = session.createQuery("select isMod from Users where id =" + id).getQueryString();
+        session.getTransaction();
+        if (bModerator.isEmpty()) {
+            bModerator = "Unknow ID";
+        }
+        if (bModerator == "0"){
+            bModerator = "Not a Moderator";
+        }
+        return bModerator;
+    }
+    
+    //Return if the user is a administrator or not
+        public String isAdmin(int id){
+        session.beginTransaction();
+        String bAdministrator = session.createQuery("select isAdmin from Users where id =" + id).getQueryString();
+        session.getTransaction();
+        if (bAdministrator.isEmpty()) {
+            bAdministrator = "Unknow ID";
+        }
+        if (bAdministrator == "0"){
+            bAdministrator = "Not a Administrator";
+        }
+        return bAdministrator;
+    }
+        
+        //Return if the user is blocked or not
+        public String isBlocked(int id){
+        session.beginTransaction();
+        String bIsBlocked = session.createQuery("select isBlocked from Users where id =" + id).getQueryString();
+        session.getTransaction();
+        if (bIsBlocked.isEmpty()) {
+            bIsBlocked = "Unknow ID";
+        }
+        if (bIsBlocked == "1"){
+            bIsBlocked = "User blocked";
+        }
+        return bIsBlocked;
     }
 
     public void saveOrUpdateUsers(Users users) {

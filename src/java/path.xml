@@ -12,6 +12,9 @@
         <action name="Login" class="frontOffice.LoginAction">
             <result>/views/login.jsp</result>
         </action>
+        <action name="Logout" class="frontOffice.LogoutAction">
+            <result>/views/home.jsp</result>
+        </action>
         <action name="Account" class="frontOffice.AccountAction">
             <result>/views/account.jsp</result>
         </action>

@@ -11,7 +11,7 @@ import org.hibernate.Session;
  */
 public class UserHelper {
 
-    Session session;
+    Session session = null;
     
     public UserHelper () {
      this.session = HibernateUtil.getSessionFactory().getCurrentSession();

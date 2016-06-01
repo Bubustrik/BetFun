@@ -29,6 +29,9 @@
         <property name="isBlocked" type="boolean">
             <column name="isBlocked" not-null="true" />
         </property>
+        <property name="password" type="string">
+            <column name="password" not-null="true"/>
+        </property>
         <set name="bets" table="Bet" inverse="true" lazy="true" fetch="select">
             <key>
                 <column name="id" not-null="true" />

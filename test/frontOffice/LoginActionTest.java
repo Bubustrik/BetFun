@@ -12,9 +12,9 @@ import org.junit.Test;
  *
  * @author PierreP
  */
-public class HomeActionTest {
+public class LoginActionTest {
     
-    public HomeActionTest() {
+    public LoginActionTest() {
     }
     
     @BeforeClass
@@ -39,7 +39,7 @@ public class HomeActionTest {
     @Test
     public void testGetLogin() {
         System.out.println("getLogin");
-        HomeAction instance = new HomeAction();
+        LoginAction instance = new LoginAction();
         String expResult = "Login1";
         String result = instance.getLogin();
         assertEquals(expResult, result);
@@ -52,7 +52,7 @@ public class HomeActionTest {
     @Test
     public void testGetPassword() {
         System.out.println("getPassword");
-        HomeAction instance = new HomeAction();
+        LoginAction instance = new LoginAction();
         String expResult = "motdepasse";
         String result = instance.getPassword();
         assertEquals(expResult, result);
@@ -66,7 +66,7 @@ public class HomeActionTest {
     public void testSetLogin() {
         System.out.println("setLogin");
         String login = "Login1";
-        HomeAction instance = new HomeAction();
+        LoginAction instance = new LoginAction();
         instance.setLogin(login);
         fail("Fail : setLogin");
     }
@@ -78,7 +78,7 @@ public class HomeActionTest {
     public void testSetPassword() {
         System.out.println("setPassword");
         String password = "motdepasse";
-        HomeAction instance = new HomeAction();
+        LoginAction instance = new LoginAction();
         instance.setPassword(password); 
         fail("Fail : setPassword");
     }

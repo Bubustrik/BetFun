@@ -19,6 +19,7 @@ public class Users  implements java.io.Serializable {
      private String email;
      private Integer scores;
      private boolean isBlocked;
+     private String password;
      private Set<Bet> bets = new HashSet<Bet>(0);
      private Set<Teams> teamses = new HashSet<Teams>(0);
 
@@ -26,15 +27,16 @@ public class Users  implements java.io.Serializable {
     }
 
 	
-    public Users(String lastname, String firstname, boolean isAdmin, boolean isMod, String email, boolean isBlocked) {
+    public Users(String lastname, String firstname, boolean isAdmin, boolean isMod, String email, boolean isBlocked, String password) {
         this.lastname = lastname;
         this.firstname = firstname;
         this.isAdmin = isAdmin;
         this.isMod = isMod;
         this.email = email;
         this.isBlocked = isBlocked;
+        this.password = password;
     }
-    public Users(String lastname, String firstname, boolean isAdmin, boolean isMod, String email, Integer scores, boolean isBlocked, Set<Bet> bets, Set<Teams> teamses) {
+    public Users(String lastname, String firstname, boolean isAdmin, boolean isMod, String email, Integer scores, boolean isBlocked, String password, Set<Bet> bets, Set<Teams> teamses) {
        this.lastname = lastname;
        this.firstname = firstname;
        this.isAdmin = isAdmin;
@@ -42,6 +44,7 @@ public class Users  implements java.io.Serializable {
        this.email = email;
        this.scores = scores;
        this.isBlocked = isBlocked;
+       this.password = password;
        this.bets = bets;
        this.teamses = teamses;
     }
@@ -116,6 +119,16 @@ public class Users  implements java.io.Serializable {
     public void setTeamses(Set<Teams> teamses) {
         this.teamses = teamses;
     }
+
+    public String getPassword() {
+        return password;
+    }
+    
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
+    
 
 
 

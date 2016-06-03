@@ -1,11 +1,9 @@
-
-        <!-- Import header -->
-        <%@include file="templates/header.jsp" %>
+<%@include file="templates/header.jsp" %>
 
 
         <section class="aboutSect">
             <div class="policyPict">
-                
+                Je suis un test
             </div>
         </section>
 

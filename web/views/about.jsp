@@ -1,5 +1,4 @@
-
-<!-- Import header -->
+        <!-- Import header -->
         <%@include file="templates/header.jsp" %>
 
 

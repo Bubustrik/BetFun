@@ -28,10 +28,10 @@
                             </a>
                         </li>
                         <li>
-                            <a class="btn" href="#2ndSect">Paris</a>
+                            <a class="btn" href="/BetFun/Paris">Paris</a>
                         </li>
                         <li>
-                            <a class="btn" href="#3rdSect">Tournois</a>
+                            <a class="btn" href="/BetFun/Tournament">Tournois</a>
                         </li>
                         <li>
                             <a class="btn" href="/BetFun/Classement">Classement</a>

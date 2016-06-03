@@ -5,7 +5,7 @@
 
         <section class="aboutSect">
             <div class="policyPict">
-                
+                CLASSEMENT
             </div>
         </section>
 

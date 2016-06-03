@@ -3,19 +3,21 @@
                 
                 <ul class="footer-list">
                     <li>
-                        <a href="#">Confidentialit&eacute</a>
+                        <a href="/BetFun/Privacy">Confidentialit&eacute</a>
                     </li>
                     <li>
                         <a href="mailto:contact@betfun.com">Contact</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="/BetFun/About">About Us</a>
                     </li>
+                    <!--
                     <li>
                         <a href="#">F.A.Q.</a>
                     </li>
+                    -->
                     <li>
-                        <a href="#">Sitemap</a>
+                        <a href="/BetFun/Sitemap">Sitemap</a>
                     </li>
                 </ul>
                 <div class="">

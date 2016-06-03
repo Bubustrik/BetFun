@@ -20,13 +20,13 @@
 
         <header>
             <div class="navbar navbar-fixed-top menu-top" role="navigation">
-                <div class="imageMenu">
-                    <a href="/BetFun/">
-                        <img src="resources/images/betfun.png"/>
-                    </a>
-                </div>
                 <div class="container contMenu">
                     <ul class="nav navbar-nav">
+                        <li class="imageMenu">
+                            <a href="/BetFun/Home" class="logo">
+                                <img src="resources/images/betfun.png"/>
+                            </a>
+                        </li>
                         <li>
                             <a class="btn" href="#2ndSect">Paris</a>
                         </li>
@@ -34,12 +34,12 @@
                             <a class="btn" href="#3rdSect">Tournois</a>
                         </li>
                         <li>
-                            <a class="btn" href="#">Classement</a>
+                            <a class="btn" href="/BetFun/Classement">Classement</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                        <li>
-                           <a type="button" class="btn" href="#">Mon compte</a>
+                           <a type="button" class="btn" href="/BetFun/Account">Mon compte</a>
                        </li>
                    </ul>
                 </div>

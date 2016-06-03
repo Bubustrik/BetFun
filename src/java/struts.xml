@@ -4,5 +4,5 @@
 
 <struts>
     <constant name="struts.devMode" value="true" />
-    <include file="path.xml"/>    
+    <include file="path.xml"/>
 </struts>

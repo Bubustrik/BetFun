@@ -21,6 +21,18 @@
         <action name="Classement" class="frontOffice.ClassementAction">
             <result>/views/classement.jsp</result>
         </action>
+        <action name="Privacy">
+            <result>/views/policy.jsp</result>
+        </action>
+        <action name="Sitemap">
+            <result>/views/sitemap.jsp</result>
+        </action>
+        <action name="About">
+            <result>/views/about.jsp</result>
+        </action>
+        <action name="Admin" class="backOffice.AdministratorAction">
+            <result>/views/admin/index.jsp</result>
+        </action>
     </package>
     <package name="paris" extends="struts-default" namespace="/paris">
         <action name="AllParis" class="frontOffice.AllParisAction">
@@ -33,12 +45,13 @@
         </action>
     </package>
     <package name="group" extends="struts-default" namespace="/groups">
-        <action name="AllGroup" class="frontOffice.AllGoupsAction">
+        <action name="AllGroup" class="frontOffice.AllGroupsAction">
             <result>/views/AllGroup.jsp</result>
         </action>
     </package>
     <package name="backOffice" extends="struts-default" namespace="backOffice">
         <action name="Admin" class="backOffice.AdministratorAction">
+            <result>/views/admin/index.jsp</result>
         </action>
     </package>
 </struts>

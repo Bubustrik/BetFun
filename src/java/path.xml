@@ -13,12 +13,12 @@
             <result>/views/login.jsp</result>
         </action>
         <action name="Logout" class="frontOffice.LogoutAction">
-            <result></result>
+            <result>/views/login.jsp</result>
         </action>
         <action name="Account" class="frontOffice.AccountAction">
             <result>/views/account.jsp</result>
         </action>
-        <action name="Classement" class="frontOffice.Classement">
+        <action name="Classement" class="frontOffice.ClassementAction">
             <result>/views/classement.jsp</result>
         </action>
     </package>
@@ -33,7 +33,7 @@
         </action>
     </package>
     <package name="group" extends="struts-default" namespace="/groups">
-        <action name="AllGroup" class="frontOffice.AllGoupAction">
+        <action name="AllGroup" class="frontOffice.AllGoupsAction">
             <result>/views/AllGroup.jsp</result>
         </action>
     </package>

@@ -13,6 +13,7 @@
     <mapping resource="model/Matchs.hbm.xml"/>
     <mapping resource="model/Choices.hbm.xml"/>
     <mapping resource="model/Users.hbm.xml"/>
+    <mapping resource="model/MatchComment.hbm.xml"/>
     <mapping resource="model/TypesChoices.hbm.xml"/>
     <mapping resource="model/Bet.hbm.xml"/>
     <mapping resource="model/Tournaments.hbm.xml"/>

@@ -1,5 +1,5 @@
 package model;
-// Generated 30 mai 2016 15:21:51 by Hibernate Tools 4.3.1
+// Generated 3 juin 2016 13:43:02 by Hibernate Tools 4.3.1
 
 
 import java.util.HashSet;
@@ -21,7 +21,9 @@ public class Users  implements java.io.Serializable {
      private boolean isBlocked;
      private String password;
      private Set<Bet> bets = new HashSet<Bet>(0);
+     private Set<Matchs> matchses = new HashSet<Matchs>(0);
      private Set<Teams> teamses = new HashSet<Teams>(0);
+     private Set<MatchComment> matchComments = new HashSet<MatchComment>(0);
 
     public Users() {
     }
@@ -36,7 +38,7 @@ public class Users  implements java.io.Serializable {
         this.isBlocked = isBlocked;
         this.password = password;
     }
-    public Users(String lastname, String firstname, boolean isAdmin, boolean isMod, String email, Integer scores, boolean isBlocked, String password, Set<Bet> bets, Set<Teams> teamses) {
+    public Users(String lastname, String firstname, boolean isAdmin, boolean isMod, String email, Integer scores, boolean isBlocked, String password, Set<Bet> bets, Set<Matchs> matchses, Set<Teams> teamses, Set<MatchComment> matchComments) {
        this.lastname = lastname;
        this.firstname = firstname;
        this.isAdmin = isAdmin;
@@ -46,7 +48,9 @@ public class Users  implements java.io.Serializable {
        this.isBlocked = isBlocked;
        this.password = password;
        this.bets = bets;
+       this.matchses = matchses;
        this.teamses = teamses;
+       this.matchComments = matchComments;
     }
    
     public Integer getId() {
@@ -105,12 +109,26 @@ public class Users  implements java.io.Serializable {
     public void setIsBlocked(boolean isBlocked) {
         this.isBlocked = isBlocked;
     }
+    public String getPassword() {
+        return this.password;
+    }
+    
+    public void setPassword(String password) {
+        this.password = password;
+    }
     public Set<Bet> getBets() {
         return this.bets;
     }
     
     public void setBets(Set<Bet> bets) {
         this.bets = bets;
+    }
+    public Set<Matchs> getMatchses() {
+        return this.matchses;
+    }
+    
+    public void setMatchses(Set<Matchs> matchses) {
+        this.matchses = matchses;
     }
     public Set<Teams> getTeamses() {
         return this.teamses;
@@ -119,16 +137,13 @@ public class Users  implements java.io.Serializable {
     public void setTeamses(Set<Teams> teamses) {
         this.teamses = teamses;
     }
-
-    public String getPassword() {
-        return password;
+    public Set<MatchComment> getMatchComments() {
+        return this.matchComments;
     }
     
-    public void setPassword(String password) {
-        this.password = password;
+    public void setMatchComments(Set<MatchComment> matchComments) {
+        this.matchComments = matchComments;
     }
-    
-    
 
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 30 mai 2016 15:21:51 by Hibernate Tools 4.3.1 -->
+<!-- Generated 3 juin 2016 13:43:03 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="model.Matchs" table="Matchs" catalog="betfunpi_BetFun" optimistic-lock="version">
         <id name="id" type="java.lang.Integer">
@@ -10,6 +10,9 @@
         </id>
         <many-to-one name="groups" class="model.Groups" fetch="select">
             <column name="id_Groups" not-null="true" />
+        </many-to-one>
+        <many-to-one name="users" class="model.Users" fetch="select">
+            <column name="IdUsers" not-null="true" />
         </many-to-one>
         <property name="name" type="string">
             <column name="name" length="100" not-null="true" />
@@ -26,6 +29,12 @@
         <property name="resultDate" type="timestamp">
             <column name="resultDate" length="19" not-null="true" />
         </property>
+        <set name="matchComments" table="MatchComment" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="idMatch" not-null="true" />
+            </key>
+            <one-to-many class="model.MatchComment" />
+        </set>
         <set name="bets" table="Bet" inverse="true" lazy="true" fetch="select">
             <key>
                 <column name="id_Matchs" not-null="true" />

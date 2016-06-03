@@ -2,13 +2,15 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
 <hibernate-reverse-engineering>
   <schema-selection match-catalog="betfunpi_BetFun"/>
-  <table-filter match-name="Users"/>
-  <table-filter match-name="Choices"/>
-  <table-filter match-name="Matchs"/>
   <table-filter match-name="Bet"/>
-  <table-filter match-name="Tournaments"/>
-  <table-filter match-name="TypesChoices"/>
-  <table-filter match-name="Teams"/>
   <table-filter match-name="Groups"/>
+  <table-filter match-name="Users"/>
   <table-filter match-name="UserInTeam"/>
+  <table-filter match-name="Tournaments"/>
+  <table-filter match-name="Choices"/>
+  <table-filter match-name="MatchComment"/>
+  <table-filter match-name="Teams"/>
+  <table-filter match-name="TypesChoices"/>
+  <table-filter match-name="WhoComment"/>
+  <table-filter match-name="Matchs"/>
 </hibernate-reverse-engineering>

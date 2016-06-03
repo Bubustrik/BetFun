@@ -13,12 +13,33 @@
             <result>/views/login.jsp</result>
         </action>
         <action name="Logout" class="frontOffice.LogoutAction">
-            <result>/views/home.jsp</result>
+            <result></result>
         </action>
         <action name="Account" class="frontOffice.AccountAction">
             <result>/views/account.jsp</result>
         </action>
+        <action name="Classement" class="frontOffice.Classement">
+            <result>/views/classement.jsp</result>
+        </action>
     </package>
-    
+    <package name="paris" extends="struts-default" namespace="/paris">
+        <action name="AllParis" class="frontOffice.AllParisAction">
+            <result>/views/AllParis.jsp</result>
+        </action>
+    </package>
+    <package name="tournament" extends="struts-default" namespace="/tournaments">
+        <action name="AllTournaments" class="frontOffice.AllTournamentsAction">
+            <result>/views/AllTournaments.jsp</result>
+        </action>
+    </package>
+    <package name="group" extends="struts-default" namespace="/groups">
+        <action name="AllGroup" class="frontOffice.AllGoupAction">
+            <result>/views/AllGroup.jsp</result>
+        </action>
+    </package>
+    <package name="backOffice" extends="struts-default" namespace="backOffice">
+        <action name="Admin" class="backOffice.AdministratorAction">
+        </action>
+    </package>
 </struts>
 

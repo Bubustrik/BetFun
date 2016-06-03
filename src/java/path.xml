@@ -33,15 +33,21 @@
         <action name="Admin" class="backOffice.AdministratorAction">
             <result>/views/admin/index.jsp</result>
         </action>
+        <action name="Tournament" class="frontOffice.AllTournamentsAction">
+            <result>/views/tournaments.jsp</result>
+        </action>
+        <action name="Paris" class="frontOffice.AllParisAction">
+            <result>/views/bets.jsp</result>
+        </action>
     </package>
     <package name="paris" extends="struts-default" namespace="/paris">
         <action name="AllParis" class="frontOffice.AllParisAction">
             <result>/views/AllParis.jsp</result>
         </action>
     </package>
-    <package name="tournament" extends="struts-default" namespace="/tournaments">
-        <action name="AllTournaments" class="frontOffice.AllTournamentsAction">
-            <result>/views/AllTournaments.jsp</result>
+    <package name="Tournament" extends="struts-default" namespace="/tournaments">
+        <action name="Tournament" class="frontOffice.AllTournamentsAction">
+            <result>/views/tournaments.jsp</result>
         </action>
     </package>
     <package name="group" extends="struts-default" namespace="/groups">

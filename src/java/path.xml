@@ -6,9 +6,6 @@
 
 <struts>
     <package name="frontOffice" extends="struts-default" namespace="/">
-        <action name="Home" class="frontOffice.HomeAction" >
-            <result>/views/home.jsp</result>
-        </action>
         <action name="Login" class="frontOffice.LoginAction" method="execute">
             <result>/views/bets.jsp</result>
             <result name="error">/views/login.jsp</result>
@@ -39,6 +36,9 @@
         </action>
         <action name="Paris" class="frontOffice.AllParisAction">
             <result>/views/bets.jsp</result>
+        </action>
+        <action name="SignUp" class="frontOffice.AccountAction" method="execute">
+            <result>/views/signup.jsp</result>
         </action>
     </package>
     <package name="paris" extends="struts-default" namespace="/paris">

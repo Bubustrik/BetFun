@@ -9,7 +9,7 @@
                         <div class="col-lg-12">
                             <h2>LES TOURNOIS</h2>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6 homeEncartSecond">
 
                             <s:iterator value="allTournaments">
                                 <div class="homeEncardTournois">

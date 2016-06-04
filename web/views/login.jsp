@@ -20,9 +20,9 @@
                             </p>
                             <br />
                             <p>
-                                BetFun vous permettra de miser de petits objets, des corvés,
+                                BetFun vous permettra de miser de petits objets, des corv&eacute;s,
                                 des petits pains... Ici, vous pouvez vous permettre d'être
-                                créatif et de parier sur la chemise que va porter un collègue
+                                cr&eacute;atif et de parier sur la chemise que va porter un collègue
                                 le lundi suivant.
                             </p>
                         </div>
@@ -48,7 +48,7 @@
                             <label for="stayConnected">Restez connecté</label>
 
                             <hr id="InscriptSecondHr">
-                            <a id="inscription" href="#">Se créer un compte</a>
+                            <a id="inscription" href="/BetFun/SignUp">Se créer un compte</a>
                             <br />
                             <br />
                         </form>

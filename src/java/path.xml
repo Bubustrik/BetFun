@@ -9,8 +9,9 @@
         <action name="Home" class="frontOffice.HomeAction" >
             <result>/views/home.jsp</result>
         </action>
-        <action name="Login" class="frontOffice.LoginAction">
-            <result>/views/login.jsp</result>
+        <action name="Login" class="frontOffice.LoginAction" method="execute">
+            <result>/views/bets.jsp</result>
+            <result name="error">/views/login.jsp</result>
         </action>
         <action name="Logout" class="frontOffice.LogoutAction">
             <result>/views/login.jsp</result>

@@ -41,7 +41,7 @@ public class LoginActionTest {
         System.out.println("getLogin");
         LoginAction instance = new LoginAction();
         String expResult = "Login1";
-        String result = instance.getLogin();
+        String result = instance.getEmail();
         assertEquals(expResult, result);
         fail("Fail : getLogin : " + result);
     }
@@ -63,12 +63,12 @@ public class LoginActionTest {
      * Test setLogin
      */
     @Test
-    public void testSetLogin() {
+    public void testSetEmail() {
         System.out.println("setLogin");
-        String login = "Login1";
+        String email = "Login1";
         LoginAction instance = new LoginAction();
-        instance.setLogin(login);
-        fail("Fail : setLogin");
+        instance.setEmail(email);
+        fail("Fail : setEmail");
     }
 
     /**

@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="resources/css/sitemap.less" type="text/css" media="screen" />
         
         <link rel="icon" type="image/x-icon" href="resources/images/betfunFlav.png" />
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <%@ taglib prefix="s" uri="/struts-tags" %>
     </head>
 

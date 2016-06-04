@@ -19,34 +19,40 @@ import model.Users;
  */
 public class LoginAction extends ActionSupport {
 
-    private String login;
+    private String email;
     private String password;
     private UserHelper helperUser;
 
     @Override
     public String execute() throws Exception {
-        if (!login.isEmpty()) {
-            helperUser = new UserHelper();
-            Users user = helperUser.getUser(login);
-            if (login.equals(user.getEmail()) && password.equals(user.getPassword())) {
-                Map session = ActionContext.getContext().getSession();
-                session.put("Logined", "true");
-                session.put("context", new Date());
+        System.out.print("TEST");
+        if (email != null) {
+            System.out.println("EMAIL : "+ email);
+            System.out.println("PASSWORD :"+ password);
+             helperUser = new UserHelper();
+            Users user = helperUser.getUser(email);
+            System.out.println("UserEmail :" + user.getEmail());
+            System.out.println("UserPassword :" + user.getPassword());
+            if (email.equals(user.getEmail()) && password.equals(user.getPassword())) {
+            Map session = ActionContext.getContext().getSession();
+            session.put("Logined", "true");
+            session.put("context", new Date());
             }
+            return SUCCESS;
         }
-        return SUCCESS;
+        return ERROR;
     }
 
-    public String getLogin() {
-        return login;
+    public String getEmail() {
+        return email;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setPassword(String password) {

@@ -78,8 +78,6 @@ public class RecoverPwdAction extends ActionSupport {
             }
                 return SUCCESS;
             } else {
-                System.out.println(emailTo);
-                System.out.println(usersExist(emailTo));
                 System.out.println("User not exist");
             }
             return INPUT;
@@ -100,6 +98,6 @@ public class RecoverPwdAction extends ActionSupport {
     private void resetPassword() {
         helperUsers = new UserHelper();
         user.setPassword("p@$$w0rD");
-        helperUsers.saveOrUpdateUsers(user);
+        helperUsers.updateUsers(user);
     }
 }

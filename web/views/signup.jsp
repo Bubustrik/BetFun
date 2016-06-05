@@ -12,16 +12,16 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="col-lg-8 homeInscription" style="margin-top: 100px;">
-                        <form action="Account" method="POST">
+                        <form action="SignUp" method="POST">
                             <h2>Créer un compte</h2>
                             <hr>
                             <div class="col-lg-12" style="margin: 0; padding: 0;">
                                 <label>Nom : </label>
-                                <input type="text" name="lastname"/>
+                                <input type="text" name="lastName"/>
                             </div>
                             <div class="col-lg-12" style="margin: 0; padding: 0;">
                                 <label>Prénom : </label>
-                                <input type="text" name="firstname"/>
+                                <input type="text" name="firstName"/>
                             </div>
                             <div class="col-lg-12" style="margin: 0; padding: 0;">
                                 <label>Email : </label>
@@ -33,10 +33,10 @@
                             </div>
                             <div class="col-lg-12" style="margin: 0; padding: 0;">
                                 <label>Confirmer password : </label>
-                                <input type="text" name="password"/>
+                                <input type="text" name="confirmatedPassword"/>
                             </div>
-
-                            <a id="btnConnexion" class="btn" style="margin-bottom: 15px;" href="Login">S'inscrire</a>
+                            <input type="submit" value="submit"/>
+                            <!--<a id="btnConnexion" class="btn" style="margin-bottom: 15px;" href="Login">S'inscrire</a>-->
                             <br />
                         </form>
                     </div>

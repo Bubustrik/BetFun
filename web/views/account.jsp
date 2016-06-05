@@ -12,13 +12,13 @@
                         <hr id="InscriptSecondHr">
                         <br />
                         <label>Nom :</label>
-                        <p>Buirette</p>
+                        <p><s:property value="user.Lastname"/></p>
                         <label>Prénom :</label>
-                        <p>Quentin</p>
+                        <p><s:property value="user. Firstname"/></p>
                         <label>Email :</label>
-                        <p>quentin.buirette@epsi.fr</p>
+                        <p><s:property value="user.Email"/></p>
                         <label>Mon score :</label>
-                        <p>140 pts</p>
+                        <p><s:property value="user.Scores"/> pts</p>
                         <br />
                         <hr id="InscriptSecondHr">
                         <a id="inscription" href="/BetFun/ChangePass" style="padding-top: 2px;">Changer mon mot de passe</a>

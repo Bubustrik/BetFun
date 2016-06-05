@@ -18,17 +18,21 @@
                                     <th class="col-lg-4">Points</th>
                                 </tr>
                                 <tr>
+                                    <td class="tdNone col-lg-4"></td>
+                                    <td class="tdNone col-lg-4"></td>
+                                    <td class="tdNone col-lg-4"></td>
+                                </tr>
+                                <tr>
                                     <td class="col-lg-4"><p> Buirette </p></td>
                                     <td class="col-lg-4"><p> Quentin </p></td>
                                     <td class="col-lg-4"><p> 120 </p></td>
-                                </tr>             
+                                </tr>         
                             </table>     
-                        </div>        
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- Import footer -->
         <%@include file="templates/footer.jsp" %>

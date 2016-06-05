@@ -15,7 +15,7 @@
                                 <label>Votre adresse email : </label>
                                 <input type="text" name="emailTo"/>
                             </div>
-                            <input type="submit" value="Submit">
+                            <input class="validBut" type="submit" value="Récupérer mon mot de passe">
                             <!--<a id="btnConnexion" class="btn" style="margin-bottom: 15px;" href="Login">Récupérer mon mot de passe</a>-->
                             <br />
                         </form>

@@ -33,25 +33,20 @@
                         <form id="fromConnexion" action="Login" method="POST">
                             <h2>Connexion</h2>
                             <hr>
-                            <div class="col-lg-12" style="margin: 0; padding: 0;">
+                            <div style="margin: 0; padding: 0;">
                                 <label>Email : </label>
                                 <input type="text" name="email"/>
                             </div>
-                            <div class="col-lg-12" style="margin: 0; padding: 0;">
+                            <div style="margin: 0; padding: 0;">
                                 <label>Password : </label>
                                 <input type="password" name="password"/>
                             </div>
-                            <input type="submit" value="Submit">
-                            <!--<a id="btnConnexion" class="btn" style="margin-bottom: 8px;" onclick="document.getElementById('fromConnexion').submit()" href="Login">Se connecter</a>-->
-
-                            <input type="checkbox" id="stayConnected" style="padding-top: 5px;">
-                            <label for="stayConnected">Restez connecté</label>
-
+                            
+                            <input class="validBut" type="submit" value="Se connecter"/>
                             <hr id="InscriptSecondHr">
+
                             <a id="inscription" href="/BetFun/RecoverPass" style="padding-top: 2px;">Mot de passe oublié</a>
                             <a id="inscription" href="/BetFun/SignUp" style="padding-bottom: 12px;">Se créer un compte</a>
-                            <br />
-                            <br />
                         </form>
                     </div>
                 </div>

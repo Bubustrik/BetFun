@@ -4,8 +4,14 @@
 
 
         <section class="aboutSect">
-            <div class="policyPict">
-                CLASSEMENT
+            <div class="rankingPict">
+                <div class="container rankingCont">
+                    <div class="row">
+                        <div class="rankingTable">
+                            ToDo Table with User Ranking
+                        </div>        
+                    </div>
+                </div>
             </div>
         </section>
 

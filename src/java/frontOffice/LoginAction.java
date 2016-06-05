@@ -11,7 +11,6 @@ import com.opensymphony.xwork2.ActionSupport;
 import helper.UserHelper;
 import java.util.Date;
 import java.util.Map;
-import model.Users;
 
 /**
  *
@@ -25,20 +24,16 @@ public class LoginAction extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
-        System.out.print("TEST");
         if (email != null) {
-            System.out.println("EMAIL : "+ email);
-            System.out.println("PASSWORD :"+ password);
-             helperUser = new UserHelper();
-            Users user = helperUser.getUser(email);
-            System.out.println("UserEmail :" + user.getEmail());
-            System.out.println("UserPassword :" + user.getPassword());
-            if (email.equals(user.getEmail()) && password.equals(user.getPassword())) {
-            Map session = ActionContext.getContext().getSession();
-            session.put("Logined", "true");
-            session.put("context", new Date());
+            helperUser = new UserHelper();
+            String passwordBase = helperUser.getPassword(email);
+            if (password.equals(passwordBase)) {
+                Map session = ActionContext.getContext().getSession();
+                session.put("emailUser", email);
+                session.put("Logined", "true");
+                session.put("context", new Date());
+                return SUCCESS;
             }
-            return SUCCESS;
         }
         return ERROR;
     }

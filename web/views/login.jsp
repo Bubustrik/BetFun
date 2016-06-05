@@ -1,4 +1,3 @@
-
 <!-- Import header -->
 <%@include file="templates/header.jsp" %>
 
@@ -48,7 +47,8 @@
                             <label for="stayConnected">Restez connecté</label>
 
                             <hr id="InscriptSecondHr">
-                            <a id="inscription" href="/BetFun/SignUp">Se créer un compte</a>
+                            <a id="inscription" href="/BetFun/ChangePass" style="padding-top: 2px;">Mot de passe oublié</a>
+                            <a id="inscription" href="/BetFun/SignUp" style="padding-bottom: 12px;">Se créer un compte</a>
                             <br />
                             <br />
                         </form>

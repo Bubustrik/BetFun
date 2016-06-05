@@ -20,7 +20,7 @@
                                 <input type="text" name="password"/>
                             </div>
                             <div class="col-lg-12" style="margin: 0; padding: 0;">
-                                <label>Confirmer nouveau mot de passe : </label>
+                                <label>Confirmer votre nouveau mot de passe : </label>
                                 <input type="text" name="password"/>
                             </div>
 

@@ -97,7 +97,7 @@ public class UserHelperTest {
         System.out.println("saveOrUpdateUsers");
         Users users = null;
         UserHelper instance = new UserHelper();
-        instance.saveOrUpdateUsers(users);
+        instance.updateUsers(users);
         fail("Fail : SaveOrUpdateUsers=null");
     }
 

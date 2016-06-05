@@ -28,7 +28,6 @@ public class ChangePwdAction extends ActionSupport {
             UserHelper helperUser = new UserHelper();
             Map session = ActionContext.getContext().getSession();
             String email = (String) session.get("emailUser");
-            System.out.println(email);
             Users user = helperUser.getUser(email);
             if (passwordOld.equals(user.getPassword()) && passwordNew.equals(passwordConfirmed)) {
                 user.setPassword(passwordNew);

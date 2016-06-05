@@ -24,7 +24,7 @@
                 <div class="container contMenu">
                     <ul class="nav navbar-nav">
                         <li class="imageMenu">
-                            <a href="/BetFun/Login" class="logo">
+                            <a href="/BetFun/" class="logo">
                                 <img src="resources/images/betfun.png"/>
                             </a>
                         </li>
@@ -39,9 +39,12 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                       <li>
-                           <a type="button" class="btn" href="/BetFun/Account">Mon compte</a>
-                       </li>
+                        <li>
+                            <a class="btn" href="/BetFun/">Déconnexion</a>
+                        </li>
+                        <li>
+                            <a type="button" class="btn" href="/BetFun/Account">Mon compte</a>
+                        </li>
                    </ul>
                 </div>
                 <div class="clear"></div>

@@ -87,7 +87,7 @@ public class SignUpAction extends ActionSupport {
                 + "-login: " + emailUser + "\n"
                 + "-mot de passe: " + passwordUser + "\n"
                 + "\n"
-                + "Si vous n'Ítes pas à l'origine de cette inscription, veuillez contacter immédiatement le support via le mail ci-dessous: \n"
+                + "Si vous n'etes pas à l'origine de cette inscription, veuillez contacter immédiatement le support via le mail ci-dessous: \n"
                 + "\n"
                 + "- " + emailFrom + "\n"
                 + "\n"

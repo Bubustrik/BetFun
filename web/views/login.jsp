@@ -41,7 +41,8 @@
                                 <label>Password : </label>
                                 <input type="password" name="password"/>
                             </div>
-                            <a id="btnConnexion" class="btn" style="margin-bottom: 8px;" href="Login">Se connecter</a>
+                            <input type="submit" value="Submit">
+                            <!--<a id="btnConnexion" class="btn" style="margin-bottom: 8px;" onclick="document.getElementById('fromConnexion').submit()" href="Login">Se connecter</a>-->
 
                             <input type="checkbox" id="stayConnected" style="padding-top: 5px;">
                             <label for="stayConnected">Restez connecté</label>

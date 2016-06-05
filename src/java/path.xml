@@ -43,8 +43,9 @@
         <action name="ChangePass" class="frontOffice.AccountAction" method="execute">
             <result>/views/changePass.jsp</result>
         </action>
-        <action name="RecoverPass" class="frontOffice.AccountAction" method="execute">
-            <result>/views/recoverPwd.jsp</result>
+        <action name="RecoverPass" class="frontOffice.RecoverPwdAction" method="execute">
+           <result name="input">/views/recoverPwd.jsp</result>
+           <result>/views/login.jsp</result>
         </action>
     </package>
     <package name="paris" extends="struts-default" namespace="/paris">

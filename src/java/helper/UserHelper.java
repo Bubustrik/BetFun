@@ -108,7 +108,17 @@ public class UserHelper {
         return bIsBlocked;
     }
 
-    public void saveOrUpdateUsers(Users users) {
+    public void addUsers(Users user) {
+        session.beginTransaction();
+        try {
+            session.save(user);
+            session.getTransaction().commit();
+        } catch(Exception ex) {
+            session.getTransaction().rollback();
+        }
+    }
+    
+    public void updateUsers(Users users) {
 
         session.beginTransaction();
         try {

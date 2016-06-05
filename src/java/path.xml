@@ -37,11 +37,13 @@
         <action name="Paris" class="frontOffice.AllParisAction">
             <result>/views/bets.jsp</result>
         </action>
-        <action name="SignUp" class="frontOffice.AccountAction" method="execute">
+        <action name="SignUp" class="frontOffice.SignUpAction" method="execute">
             <result>/views/signup.jsp</result>
+            <result name="input">/views/signup.jsp</result>
+           <result>/views/login.jsp</result>
         </action>
         <action name="ChangePass" class="frontOffice.AccountAction" method="execute">
-            <result>/views/changePass.jsp</result>
+            <result >/views/changePass.jsp</result>
         </action>
         <action name="RecoverPass" class="frontOffice.RecoverPwdAction" method="execute">
            <result name="input">/views/recoverPwd.jsp</result>

@@ -382,8 +382,24 @@ html {
     //margin-left: 30px;
 }
 
+input.validBut {
+    width: 100%;
+    color: wheat;
+    border: 1px solid wheat;
+    padding: 5px 0px 5px 0px;
+    margin: 15px 0px 15px 0px;
+}
+
+input.validBut:hover {
+    color: black;
+    background-color: wheat;
+    border: 1px solid wheat;
+    
+}
+
 hr#InscriptSecondHr {
-    margin: 0;
+    margin-top: 68px;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -394,6 +410,7 @@ hr#InscriptSecondHr {
     margin: 0;
     background-color: rgba(0,0,0,0.4);
     display: -webkit-inline-box;
+    display: inline-box;
     
     header {
         width: 100%;
@@ -463,12 +480,17 @@ hr#InscriptSecondHr {
     background-repeat: repeat-x;
 }
 
+.rankingTab p {
+    margin: 0;
+    padding: 0;
+}
+
 .rankingTab td {
     border: 2px solid whitesmoke;
     color: whitesmoke;
     background-color: rgba(0,0,0,0.6);
     font-size: 16px;
-    margin-top: 10px;
+    padding: 5px 0px 5px 0px;
 }
 
 .rankingTab th {
@@ -484,9 +506,13 @@ hr#InscriptSecondHr {
     width: 100%;
     text-align: center;
     height: 100%;
-    
     border-radius: 3px;
-    //border: 2px solid black;
+}
+
+td.tdNone {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding-bottom: 15px;
 }
 
 .signUpSect {
@@ -500,7 +526,6 @@ hr#InscriptSecondHr {
 }
 
 .signUpPict h1 {
-    //color: wheat;
     font-size: 45px;
     margin: -70px;
     padding: 0;

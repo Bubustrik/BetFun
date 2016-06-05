@@ -35,8 +35,7 @@
                                 <label>Confirmer password : </label>
                                 <input type="text" name="confirmatedPassword"/>
                             </div>
-                            <input type="submit" value="submit"/>
-                            <!--<a id="btnConnexion" class="btn" style="margin-bottom: 15px;" href="Login">S'inscrire</a>-->
+                            <input class="validBut" type="submit" value="S'inscrire"/>
                             <br />
                         </form>
                     </div>

@@ -6,9 +6,6 @@
  * Use, reproduction, distribution, and modification of this code is subject to the terms and
  * conditions of the MIT license, available at http://www.opensource.org/licenses/mit-license.php
  *
- * ARIA Support: Greta Krafsig
- *
- * Project: https://github.com/CodeSeven/toastr
  */
 /* global define */
 (function (define) {
@@ -170,7 +167,8 @@
                     closeMethod: false,
                     closeDuration: false,
                     closeEasing: false,
-
+                    closeButton: true,
+                    
                     extendedTimeOut: 1000,
                     iconClasses: {
                         error: 'toast-error',
@@ -179,7 +177,7 @@
                         warning: 'toast-warning'
                     },
                     iconClass: 'toast-info',
-                    positionClass: 'toast-top-right',
+                    positionClass: 'toast-bottom-right',
                     timeOut: 5000, // Set timeOut and extendedTimeOut to 0 to make it sticky
                     titleClass: 'toast-title',
                     messageClass: 'toast-message',
@@ -188,7 +186,7 @@
                     closeHtml: '<button type="button">&times;</button>',
                     newestOnTop: true,
                     preventDuplicates: false,
-                    progressBar: false
+                    progressBar: true
                 };
             }
 

@@ -32,17 +32,11 @@ public class LoginAction extends ActionSupport {
             helperUser = new UserHelper();
             Users user = helperUser.getUser(email);
             if (password.equals(user.getPassword())) {
-                RequestDispatcher dispatcher;
-                    
-                if (user.isIsBlocked()){
-                   
-                }else{
                     Map session = ActionContext.getContext().getSession();
                     session.put("User", user);
                     session.put("Logined", "true");
                     session.put("context", new Date());
                     return SUCCESS;   
-                }
             }
         }
         return ERROR;

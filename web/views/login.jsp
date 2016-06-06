@@ -1,7 +1,9 @@
 <!-- Import header -->
 <%@include file="templates/header.jsp" %>
 
-
+<script>
+    toastr.info('Bienvenue sur Betfun !');
+</script>
 <section class="homeSection">
     <div class="homePict">
         <div class="homefilter">

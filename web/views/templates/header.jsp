@@ -45,11 +45,12 @@
                         </li>
                     </ul>
                     <div class="dropdown headerSelect">
-                        <a class="btn dropdown-toggle" type="button" data-toggle="dropdown">Mon Compte
+                        <a class="btn dropdown-toggle headerBettun" type="button" data-toggle="dropdown">Mon Compte
                             <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
+                        <ul class="dropdown-menu dropdown-menu-right headerBetEncart">
                             <li><a href="/BetFun/Account">Mon Profile</a></li>
+                            <hr style="margin: 5px;">
                             <li><a href="/BetFun/Logout">Déconnexion</a></li>
                         </ul>
                     </div>                    

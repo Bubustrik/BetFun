@@ -25,7 +25,15 @@ public class UserHelper {
         session.close();
         return allUsers;
     }
-
+    
+     public List<Users> getUserByClassements() {
+        List<Users> allUsers;
+        session.beginTransaction();
+        allUsers = session.createQuery("from Users order by scores desc").list();
+        session.close();
+        return allUsers;
+    }
+    
     public Users getUser(String email) {
         Users user = null;
         try {
@@ -38,20 +46,7 @@ public class UserHelper {
         }
         return user;
     }
-
-    public Users getUser(int id) {
-        Users user;
-        try {
-            session.beginTransaction();
-            user = (Users) session.createQuery("select password from Users where id =" + id).uniqueResult();
-        } catch (Exception e) {
-            user = new Users();
-        } finally {
-            session.close();
-        }
-        return user;
-    }
-
+   
     public String getPassword(String email) {
         String password;
         try {
@@ -64,7 +59,6 @@ public class UserHelper {
         }
         return password;
     }
-    
 
     //Return if the user is a moderator or not
     public String isModerator(int id) {

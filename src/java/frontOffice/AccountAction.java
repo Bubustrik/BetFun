@@ -24,9 +24,7 @@ public class AccountAction extends ActionSupport {
     @Override
     public String execute() throws Exception {
         Map session = ActionContext.getContext().getSession();
-        String email = (String) session.get("emailUser");
-        helperUser = new UserHelper();
-        this.user = helperUser.getUser(email);
+        this.user = (Users) session.get("User");
         return SUCCESS;
     }
 

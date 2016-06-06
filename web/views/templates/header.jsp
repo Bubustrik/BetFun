@@ -40,7 +40,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="btn" href="/BetFun/">Déconnexion</a>
+                            <a class="btn" href="/BetFun/Logout">Déconnexion</a>
                         </li>
                         <li>
                             <a type="button" class="btn" href="/BetFun/Account">Mon compte</a>

@@ -14,7 +14,7 @@
                         <label>Nom :</label>
                         <p><s:property value="user.Lastname"/></p>
                         <label>Prénom :</label>
-                        <p><s:property value="user. Firstname"/></p>
+                        <p><s:property value="user.Firstname"/></p>
                         <label>Email :</label>
                         <p><s:property value="user.Email"/></p>
                         <label>Mon score :</label>

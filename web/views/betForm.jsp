@@ -8,7 +8,7 @@
                         </div>
                         <div class="col-lg-9">
                             <div class="col-lg-8 homeInscription" style="margin-top: 100px;">
-                                <form action="ChangePass" method="POST">
+                                <form action="CreateMatch" method="POST">
                                     <h2>Création de Paris</h2>
                                     <hr>
                                     <div class="col-lg-12" style="margin: 0; padding: 0;">

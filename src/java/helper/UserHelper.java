@@ -110,7 +110,6 @@ public class UserHelper {
     }
     
     public void updateUsers(Users users) {
-
         session.beginTransaction();
         try {
             session.saveOrUpdate(users);

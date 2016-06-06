@@ -18,6 +18,8 @@
         <script src="resources/js/toastr.js"></script>
         <link rel="icon" type="image/x-icon" href="resources/images/betfunFlav.png" />
         
+        <meta name="keywords" content="Bet BetFun Paris Concours Tournois">
+        
         <%@ taglib prefix="s" uri="/struts-tags" %>
     </head>
 
@@ -42,16 +44,16 @@
                             <a class="btn" href="/BetFun/Classement">Classement</a>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="btn" href="/BetFun/Logout">Déconnexion</a>
-                        </li>
-                        <li>
-                            <a type="button" class="btn" href="/BetFun/Account">Mon compte</a>
-                        </li>
-                   </ul>
+                    <div class="dropdown headerSelect">
+                        <a class="btn dropdown-toggle" type="button" data-toggle="dropdown">Mon Compte
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="/BetFun/Account">Mon Profile</a></li>
+                            <li><a href="/BetFun/Logout">Déconnexion</a></li>
+                        </ul>
+                    </div>                    
                 </div>
                 <div class="clear"></div>
-
             </div>
         </header>

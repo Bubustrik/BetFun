@@ -6,7 +6,7 @@
                         <a href="/BetFun/Privacy">Confidentialit&eacute</a>
                     </li>
                     <li>
-                        <a href="mailto:contact@betfun.com">Contact</a>
+                        <a href="mailto:admin@betfun.pingfiles.fr">Contact</a>
                     </li>
                     <li>
                         <a href="/BetFun/About">About Us</a>

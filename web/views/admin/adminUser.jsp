@@ -11,10 +11,10 @@
         <!-- Ionicons -->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <!-- Theme style -->
-        <link rel="stylesheet" href="resources/css/admin.less" type="text/css" media="screen" >
-        <link rel="stylesheet" href="resources/css/skin-red.css" type="text/css" media="screen" >
-        <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="resources/css/bootstrap-theme.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../resources/css/admin.less" type="text/css" media="screen" >
+        <link rel="stylesheet" href="../resources/css/skin-red.css" type="text/css" media="screen" >
+        <link rel="stylesheet" href="../resources/css/bootstrap.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../resources/css/bootstrap-theme.css" type="text/css" media="screen" />
 
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -206,21 +206,21 @@
               <!-- Sidebar Menu -->
               <ul class="sidebar-menu">
                 <li class="header">ADMIN MENU</li>
-                <li class="active">
-                    <a href="#">
-                        <i class="fa fa-link"></i> <span href="/BetFun/admin/adminUser">Users</span>
+               <li class="active">
+                    <a href="/BetFun/Admin/AdminUsers">
+                        <i class="fa fa-link"></i> <span>Users</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
-                        <i class="fa fa-link"></i> <span href="/BetFun/admin/adminParis">Paris</span>
+                    <a href="/BetFun/Admin/AdminParis">
+                        <i class="fa fa-link"></i> <span>Paris</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
-                        <i class="fa fa-link"></i> <span href="/BetFun/admin/adminTournament">Tournois</span>
+                    <a href="/BetFun/Admin/AdminTournament">
+                        <i class="fa fa-link"></i> <span>Tournois</span>
                     </a>
                 </li>
 
@@ -243,8 +243,12 @@
             <!-- Main content -->
             <section class="content">
                 <s:iterator value="allUsers">
-                  <div class="col-lg-12">
-                            <table class="">
+                  <div class="container">
+                      
+                      <h1>Gestion des Users</h1>
+                     
+                    <div class="col-lg-12">
+                            <table class="table table-striped">
                                 <tr>
                                     <th class="col-lg-3">Nom</th>
                                     <th class="col-lg-3">Prénom</th>
@@ -252,23 +256,48 @@
                                     <th class="col-lg-3">Action</th>
                                 </tr>
                                 <tr>
-                                    <td class="tdNone col-lg-3"></td>
-                                    <td class="tdNone col-lg-3"></td>
-                                    <td class="tdNone col-lg-3"></td>
-                                    <td class="tdNone col-lg-3"></td>
-                                </tr>
-                                <tr>
                                     <td class="col-lg-3"><p> Buirette </p></td>
                                     <td class="col-lg-3"><p> Quentin </p></td>
                                     <td class="col-lg-3"><p> Bloqué </p></td>
                                     <td class="col-lg-3">
                                         <form action="block_form.asp">
-                                            <input type="submit" value="Debloquer">
+                                            <input type="submit" value="Debloquer" class="btn-lg btn-danger">
                                         </form>
                                     </td>
-                                </tr>         
+                                </tr>
+                                <tr>
+                                    <td class="col-lg-3"><p> Crespel </p></td>
+                                    <td class="col-lg-3"><p> Damian </p></td>
+                                    <td class="col-lg-3"><p> Débloqué </p></td>
+                                    <td class="col-lg-3">
+                                        <form action="block_form.asp">
+                                            <input type="submit" value="Bloquer" class="btn-lg btn-danger">
+                                        </form>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td class="col-lg-3"><p> Bouquet </p></td>
+                                    <td class="col-lg-3"><p> Julien </p></td>
+                                    <td class="col-lg-3"><p> Débloqué </p></td>
+                                    <td class="col-lg-3">
+                                        <form action="block_form.asp">
+                                            <input type="submit" value="Bloquer" class="btn-lg btn-danger">
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-lg-3"><p> Petelot </p></td>
+                                    <td class="col-lg-3"><p> Pierre </p></td>
+                                    <td class="col-lg-3"><p> Bloqué </p></td>
+                                    <td class="col-lg-3">
+                                        <form action="block_form.asp">
+                                            <input type="submit" value="Debloquer" class="btn-lg btn-danger">
+                                        </form>
+                                    </td>
+                                </tr> 
                             </table>     
                         </div>
+                      </div>
                     </s:iterator>
 
             </section><!-- /.content -->

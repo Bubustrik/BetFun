@@ -72,6 +72,12 @@
         <action name="AdminUsers" class="backOffice.AllUsersAction">
             <result>/views/admin/adminUser.jsp</result>
         </action>
+        <action name="AdminParis" class="backOffice.AllUsersAction">
+            <result>/views/admin/adminParis.jsp</result>
+        </action>
+        <action name="AdminTournament" class="backOffice.AllUsersAction">
+            <result>/views/admin/adminTournament.jsp</result>
+        </action>
     </package>
 </struts>
 

@@ -15,16 +15,16 @@ import model.Tournaments;
  *
  * @author Julien
  */
-public class AllTournamentsAction extends ActionSupport
-{
+public class AllTournamentsAction extends ActionSupport {
+
     private List<Tournaments> allTournaments;
     private TournamentsHelper helperTournaments;
-    
+
     @Override
     public String execute() throws Exception {
-       return SUCCESS;
+        return SUCCESS;
     }
-    
+
     public List<Tournaments> getAllTournaments() {
         helperTournaments = new TournamentsHelper();
         this.allTournaments = helperTournaments.getAllTournaments();

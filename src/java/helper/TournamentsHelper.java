@@ -25,7 +25,7 @@ public class TournamentsHelper {
 
     public List<Tournaments> getAllTournaments() {
         org.hibernate.Transaction tx = session.beginTransaction();
-        List<Tournaments> allTournaments = session.createQuery("from Tournaments").list();
+        List<Tournaments> allTournaments = session.createQuery("from Tournaments order by endDate desc").list();
         return allTournaments;
     }
 

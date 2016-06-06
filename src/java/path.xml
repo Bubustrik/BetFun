@@ -50,7 +50,7 @@
            <result>/views/login.jsp</result>
         </action>
     </package>
-    <package name="paris" extends="struts-default" namespace="/paris">
+   <!-- <package name="paris" extends="struts-default" namespace="/paris">
         <action name="AllParis" class="frontOffice.AllParisAction">
             <result>/views/AllParis.jsp</result>
         </action>
@@ -64,7 +64,7 @@
         <action name="AllGroup" class="frontOffice.AllGroupsAction">
             <result>/views/AllGroup.jsp</result>
         </action>
-    </package>
+    </package>-->
     <package name="backOffice" extends="struts-default" namespace="backOffice">
         <action name="Admin" class="backOffice.AdministratorAction">
             <result>/views/admin/index.jsp</result>

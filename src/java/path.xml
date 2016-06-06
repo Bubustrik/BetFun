@@ -65,11 +65,11 @@
             <result>/views/AllGroup.jsp</result>
         </action>
     </package>-->
-    <package name="backOffice" extends="struts-default" namespace="Admin">
+    <package name="backOffice" extends="struts-default" namespace="/Admin">
         <action name="Admin" class="backOffice.AdministratorAction">
             <result>/views/admin/index.jsp</result>
         </action>
-        <action name="AdminUsers" class="backOffice.AdministratorAction">
+        <action name="AdminUsers" class="backOffice.AllUsersAction">
             <result>/views/admin/adminUser.jsp</result>
         </action>
     </package>

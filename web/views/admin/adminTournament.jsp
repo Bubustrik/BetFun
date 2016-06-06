@@ -11,10 +11,10 @@
         <!-- Ionicons -->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <!-- Theme style -->
-        <link rel="stylesheet" href="resources/css/admin.less" type="text/css" media="screen" >
-        <link rel="stylesheet" href="resources/css/skin-red.css" type="text/css" media="screen" >
-        <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="resources/css/bootstrap-theme.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../resources/css/admin.less" type="text/css" media="screen" >
+        <link rel="stylesheet" href="../resources/css/skin-red.css" type="text/css" media="screen" >
+        <link rel="stylesheet" href="../resources/css/bootstrap.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../resources/css/bootstrap-theme.css" type="text/css" media="screen" />
 
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -206,23 +206,23 @@
                     <!-- Sidebar Menu -->
                     <ul class="sidebar-menu">
                         <li class="header">ADMIN MENU</li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-link"></i> <span href="/BetFun/admin/adminUser">Users</span>
-                            </a>
-                        </li>
+                <li >
+                    <a href="/BetFun/Admin/AdminUsers">
+                        <i class="fa fa-link"></i> <span>Users</span>
+                    </a>
+                </li>
 
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-link"></i> <span href="/BetFun/admin/adminParis">Paris</span>
-                            </a>
-                        </li>
+                <li>
+                    <a href="/BetFun/Admin/AdminParis">
+                        <i class="fa fa-link"></i> <span>Paris</span>
+                    </a>
+                </li>
 
-                        <li class="active">
-                            <a href="#">
-                                <i class="fa fa-link"></i> <span href="/BetFun/admin/adminTournament">Tournois</span>
-                            </a>
-                        </li>
+                <li class="active">
+                    <a href="/BetFun/Admin/AdminTournament">
+                        <i class="fa fa-link"></i> <span>Tournois</span>
+                    </a>
+                </li>
 
                     </ul><!-- /.sidebar-menu -->
                 </section>
@@ -243,30 +243,24 @@
                 <!-- Main content -->
                 <section class="content">
 
-                    <h2>Gestion des Tournois</h2>
-
-                    <div class="container">
-                        <h1>Click the filter icon <small>(<i class="glyphicon glyphicon-filter"></i>)</small></h1>
+                        <div class="container">
+                        <h1>Tournament</h1>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Tournois</h3>
-                                        
+                                                                              
                                         <div>
                                             <form action="add_Tournois.asp">
-                                                <input type="submit" class="btn-lg btn-success" value="Create">
+                                                <input type="submit" class="btn-lg btn-success" style="width:100%;" value="Create Tournament">
                                             </form>
                                         </div>
                                         
                                         <div class="pull-right">
-                                            <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
-                                                <i class="glyphicon glyphicon-filter"></i>
-                                            </span>
                                         </div>
                                     </div>
                                     <div class="panel-body">
-                                        <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Developers" />
+                                        <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Tournament" />
                                     </div>
                                     <table class="table table-hover" id="dev-table">
                                         <thead>

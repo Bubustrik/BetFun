@@ -11,10 +11,10 @@
         <!-- Ionicons -->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <!-- Theme style -->
-        <link rel="stylesheet" href="resources/css/admin.less" type="text/css" media="screen" >
-        <link rel="stylesheet" href="resources/css/skin-red.css" type="text/css" media="screen" >
-        <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="resources/css/bootstrap-theme.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../resources/css/admin.less" type="text/css" media="screen" >
+        <link rel="stylesheet" href="../resources/css/skin-red.css" type="text/css" media="screen" >
+        <link rel="stylesheet" href="../resources/css/bootstrap.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../resources/css/bootstrap-theme.css" type="text/css" media="screen" />
 
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -207,20 +207,20 @@
               <ul class="sidebar-menu">
                 <li class="header">ADMIN MENU</li>
                 <li>
-                    <a href="#">
-                        <i class="fa fa-link"></i> <span href="/BetFun/admin/adminUser">Users</span>
+                    <a href="/BetFun/Admin/AdminUsers">
+                        <i class="fa fa-link"></i> <span>Users</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
-                        <i class="fa fa-link"></i> <span href="/BetFun/admin/adminParis">Paris</span>
+                    <a href="/BetFun/Admin/AdminParis">
+                        <i class="fa fa-link"></i> <span>Paris</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
-                        <i class="fa fa-link"></i> <span href="/BetFun/admin/adminTournament">Tournois</span>
+                    <a href="/BetFun/Admin/AdminTournament">
+                        <i class="fa fa-link"></i> <span>Tournois</span>
                     </a>
                 </li>
 
@@ -243,7 +243,7 @@
             <!-- Main content -->
             <section class="content">
 
-
+                <h1>Welcome Administrator !</h1>
 
             </section><!-- /.content -->
           </div><!-- /.content-wrapper -->

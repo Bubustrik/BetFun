@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.Map;
 import javax.servlet.RequestDispatcher;
 import model.Users;
+import javax.script.*;
 
 /**
  *
@@ -28,7 +29,8 @@ public class LoginAction extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
-        if (email != null) {
+        try{
+            if (email != null) {
             helperUser = new UserHelper();
             Users user = helperUser.getUser(email);
             if (password.equals(user.getPassword())) {
@@ -39,6 +41,11 @@ public class LoginAction extends ActionSupport {
                     
                     return SUCCESS;   
             }
+        }
+        }
+        catch(Exception e)
+        {
+            
         }
         return ERROR;
     }

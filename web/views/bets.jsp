@@ -3,7 +3,7 @@
         <!-- Import header -->
         <%@include file="templates/header.jsp" %>
         <script>
-            toastr.success('Bienvenue Quentin !');
+            toastr.success('Vous êtes connecté!');
         </script>
         <section id="2ndSect" class="homeSection">
             <div class="container windowBets">

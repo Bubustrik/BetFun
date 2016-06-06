@@ -8,9 +8,11 @@ package frontOffice;
 import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import helper.UserHelper;
 import java.util.Date;
 import java.util.Map;
+import javax.servlet.RequestDispatcher;
 import model.Users;
 
 /**
@@ -21,6 +23,7 @@ public class LoginAction extends ActionSupport {
 
     private String email;
     private String password;
+    private Boolean isBlocked;
     private UserHelper helperUser;
 
     @Override
@@ -29,11 +32,17 @@ public class LoginAction extends ActionSupport {
             helperUser = new UserHelper();
             Users user = helperUser.getUser(email);
             if (password.equals(user.getPassword())) {
-                Map session = ActionContext.getContext().getSession();
-                session.put("User", user);
-                session.put("Logined", "true");
-                session.put("context", new Date());
-                return SUCCESS;
+                RequestDispatcher dispatcher;
+                    
+                if (user.isIsBlocked()){
+                   
+                }else{
+                    Map session = ActionContext.getContext().getSession();
+                    session.put("User", user);
+                    session.put("Logined", "true");
+                    session.put("context", new Date());
+                    return SUCCESS;   
+                }
             }
         }
         return ERROR;
@@ -54,4 +63,13 @@ public class LoginAction extends ActionSupport {
     public void setPassword(String password) {
         this.password = password;
     }
+    
+    public Boolean getUserStatus() {
+        return isBlocked;
+    }
+    
+    public void setUserStatus(Boolean Blocked){
+        this.isBlocked = Blocked;
+    }
+    
 }

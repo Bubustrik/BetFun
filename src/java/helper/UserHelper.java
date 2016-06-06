@@ -96,9 +96,6 @@ public class UserHelper {
         if (bIsBlocked.isEmpty()) {
             bIsBlocked = "Unknow ID";
         }
-        if (bIsBlocked == "1") {
-            bIsBlocked = "User blocked";
-        }
         return bIsBlocked;
     }
 
@@ -131,5 +128,31 @@ public class UserHelper {
         } catch (HibernateException e) {
             session.getTransaction().rollback();
         }
+    }
+    
+    public String BlockUsers(int id){
+        session.beginTransaction();
+        String bIsBlocked = session.createQuery("update Users SET isBlocked = 1 where id =" + id).getQueryString();
+        session.getTransaction();
+        if (bIsBlocked.isEmpty()) {
+            bIsBlocked = "Unknown ID";
+        }
+        if (bIsBlocked == "1") {
+            bIsBlocked = "User already blocked";
+        }
+        return bIsBlocked;
+    }
+    
+    public String UnBlockUsers(int id){
+        session.beginTransaction();
+        String bIsBlocked = session.createQuery("update Users SET isBlocked = 0 where id =" + id).getQueryString();
+        session.getTransaction();
+        if (bIsBlocked.isEmpty()) {
+            bIsBlocked = "Unknown ID";
+        }
+        if (bIsBlocked == "0") {
+            bIsBlocked = "User already unblocked";
+        }
+        return bIsBlocked;
     }
 }

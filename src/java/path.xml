@@ -49,6 +49,9 @@
            <result name="input">/views/recoverPwd.jsp</result>
            <result>/views/login.jsp</result>
         </action>
+        <action name="CreateMatch" class="frontOffice.MatchFormAction" method="execute">
+           <result>/views/betForm.jsp</result>
+        </action>
     </package>
    <!-- <package name="paris" extends="struts-default" namespace="/paris">
         <action name="AllParis" class="frontOffice.AllParisAction">

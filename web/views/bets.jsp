@@ -1,12 +1,17 @@
         <%@page import="model.Bet"%>
-<%@page import="frontOffice.AllParisAction"%>
-<!-- Import header -->
+        <%@page import="frontOffice.AllParisAction"%>
+        <!-- Import header -->
         <%@include file="templates/header.jsp" %>
         
         <section id="2ndSect" class="homeSection">
             <div class="container windowBets">
                 <div class="row">
-                    <h1>LES PARIS</h1>
+                    <div class="col-lg-6">
+                        <h1 class="col-lg-6">LES PARIS</h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="/BetFun/CreateMatch" class="btn">Créer un nouveau Paris</a>
+                    </div>
 
                     <div class="betsContent">
                         <s:iterator value="allMatchs">

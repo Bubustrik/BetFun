@@ -242,7 +242,7 @@
 
             <!-- Main content -->
             <section class="content">
-                   
+                <s:iterator value="allUsers">
                   <div class="col-lg-12">
                             <table class="">
                                 <tr>
@@ -261,12 +261,15 @@
                                     <td class="col-lg-3"><p> Buirette </p></td>
                                     <td class="col-lg-3"><p> Quentin </p></td>
                                     <td class="col-lg-3"><p> Bloqué </p></td>
-                                    <td class="col-lg-3">     <form action="demo_form.asp">
+                                    <td class="col-lg-3">
+                                        <form action="block_form.asp">
                                             <input type="submit" value="Debloquer">
-                                        </form></td>
+                                        </form>
+                                    </td>
                                 </tr>         
                             </table>     
                         </div>
+                    </s:iterator>
 
             </section><!-- /.content -->
           </div><!-- /.content-wrapper -->

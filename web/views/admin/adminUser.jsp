@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Admin</title>
+        <title>Admin of User</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.5 -->
@@ -206,7 +206,7 @@
               <!-- Sidebar Menu -->
               <ul class="sidebar-menu">
                 <li class="header">ADMIN MENU</li>
-                <li>
+                <li class="active">
                     <a href="#">
                         <i class="fa fa-link"></i> <span href="/BetFun/admin/adminUser">Users</span>
                     </a>
@@ -242,8 +242,31 @@
 
             <!-- Main content -->
             <section class="content">
-
-
+                   
+                  <div class="col-lg-12">
+                            <table class="">
+                                <tr>
+                                    <th class="col-lg-3">Nom</th>
+                                    <th class="col-lg-3">Prénom</th>
+                                    <th class="col-lg-3">Etat</th>
+                                    <th class="col-lg-3">Action</th>
+                                </tr>
+                                <tr>
+                                    <td class="tdNone col-lg-3"></td>
+                                    <td class="tdNone col-lg-3"></td>
+                                    <td class="tdNone col-lg-3"></td>
+                                    <td class="tdNone col-lg-3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-lg-3"><p> Buirette </p></td>
+                                    <td class="col-lg-3"><p> Quentin </p></td>
+                                    <td class="col-lg-3"><p> Bloqué </p></td>
+                                    <td class="col-lg-3">     <form action="demo_form.asp">
+                                            <input type="submit" value="Debloquer">
+                                        </form></td>
+                                </tr>         
+                            </table>     
+                        </div>
 
             </section><!-- /.content -->
           </div><!-- /.content-wrapper -->

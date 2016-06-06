@@ -29,6 +29,10 @@
                                     <td class="col-lg-4"><p> <s:property value="Scores"/> </p></td>
                                 </tr>      
                                 </s:iterator>
+                                    <td class="col-lg-4"><p> Buirette </p></td>
+                                    <td class="col-lg-4"><p> Quentin </p></td>
+                                    <td class="col-lg-4"><p> 120 points</p></td>
+                                </tr>         
                             </table>     
                         </div>
                     </div>

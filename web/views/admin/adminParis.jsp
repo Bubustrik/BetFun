@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Admin</title>
+        <title>Admin Paris</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.5 -->
@@ -213,7 +213,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="#" class="active">
                         <i class="fa fa-link"></i> <span href="/BetFun/admin/adminParis">Paris</span>
                     </a>
                 </li>

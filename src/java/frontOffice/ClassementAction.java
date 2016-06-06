@@ -7,15 +7,27 @@ package frontOffice;
 
 import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionSupport;
+import helper.UserHelper;
+import java.util.List;
+import model.Users;
 
 /**
  *
  * @author Julien
  */
 public class ClassementAction  extends ActionSupport {
-  
+    
+    private List<Users> allUsers;
+    private UserHelper helperUser;
+    
     @Override
     public String execute() throws Exception {
+       helperUser = new UserHelper();
+       allUsers = helperUser.getUserByClassements();
        return SUCCESS;
+    }
+    
+    public List<Users> getAllUser() {
+        return allUsers;
     }
 }

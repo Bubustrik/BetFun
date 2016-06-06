@@ -62,20 +62,6 @@ public class UserHelperTest {
     }
 
     /**
-     * Test getUser
-     */
-    @Test
-    public void testGetUser_int() {
-        System.out.println("getUser : id=1");
-        int id = 1;
-        UserHelper instance = new UserHelper();
-        Users expResult = null;
-        Users result = instance.getUser(id);
-        assertEquals(expResult, result);
-        fail("Fail : getUser(1)");
-    }
-
-    /**
      * Test getPassword
      */
     @Test

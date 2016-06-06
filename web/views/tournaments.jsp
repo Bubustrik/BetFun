@@ -9,52 +9,38 @@
                         <div class="col-lg-12">
                             <h2>LES TOURNOIS</h2>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 homeEncartSecond">
+                        <div class="col-lg-12 col-md-12 col-sm-12 homeEncartSecond">
 
                             <s:iterator value="allTournaments">
                                 <div class="homeEncardTournois">
 
                                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                        <p>
-                                            <s:property value="name"/>
-                                        </p>
-                                        <p>
-                                            Team :
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6  col-md-4 col-sm-4 col-xs-4" style="padding-top: 33px;">
-                                        <a href="#">PARIER</a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                        <p>
-                                            JOUEUR 2
-                                        </p>
-                                        <p>
-                                            Team :
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="homeEncardTournois">
+                                        <p style="color:red;font-weight : bold;">
+                                            Tournoi : <br> 
+                                        <p class="text-decoration: underline;"><s:property value="name"/></p>
+                                                                          </div>
                                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
                                         <p>
                                             <s:property value="description"/>
                                         </p>
-                                        <p>
-                                            Team :
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6  col-md-4 col-sm-4 col-xs-4" style="padding-top: 33px;">
-                                        <a href="#">PARIER</a>
                                     </div>
                                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
                                         <p>
-                                            JOUEUR 2
-                                        </p>
-                                        <p>
-                                            Team : 
+                                            Start Date : <s:property value="startDate"/><br>
+                                            End Date : <s:property value="EndDate"/>
                                         </p>
                                     </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                                        Result Date : <s:property value="ResultDate"/>
+                                    </div>
+                                    <div class="col-lg-12 col-md-4 col-sm-4 col-xs-4">
+                                        <form action="#">
+                                            <input class="btn-lg validBut" type="submit" value="Details">
+                                        </form>
+                                    </div>
+                                    <br><br>
                                 </div>
+                               
                             </s:iterator>
                         </div>
                     </div>

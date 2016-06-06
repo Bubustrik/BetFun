@@ -22,11 +22,13 @@
                                     <td class="tdNone col-lg-4"></td>
                                     <td class="tdNone col-lg-4"></td>
                                 </tr>
+                                <s:iterator value="allUsers">
                                 <tr>
-                                    <td class="col-lg-4"><p> Buirette </p></td>
-                                    <td class="col-lg-4"><p> Quentin </p></td>
-                                    <td class="col-lg-4"><p> 120 </p></td>
-                                </tr>         
+                                    <td class="col-lg-4"><p> <s:property value="Lastname"/> </p></td>
+                                    <td class="col-lg-4"><p> <s:property value="Firstname"/> </p></td>
+                                    <td class="col-lg-4"><p> <s:property value="Scores"/> </p></td>
+                                </tr>      
+                                </s:iterator>
                             </table>     
                         </div>
                     </div>

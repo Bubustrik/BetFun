@@ -9,7 +9,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 accountData">
                         <h3>Mes informations</h3>
                         <br />
-                        <hr id="InscriptSecondHr">
+                        <hr>
                         <br />
                         <label>Nom :</label>
                         <p><s:property value="user.Lastname"/></p>
@@ -20,7 +20,7 @@
                         <label>Mon score :</label>
                         <p><s:property value="user.Scores"/> pts</p>
                         <br />
-                        <hr id="InscriptSecondHr">
+                        <hr>
                         <a id="inscription" href="/BetFun/ChangePass" style="padding-top: 2px;">Changer mon mot de passe</a>
                     </div>
                     
@@ -30,11 +30,11 @@
                         <div class="accoutBets">
                             <h4>Mes Paris :</h4>
                         </div>
-                        <hr id="InscriptSecondHr">
+                        <hr>
                         <div class="accountGroup">
                             <h4>Mes Groupes :</h4>
                         </div>
-                        <hr id="InscriptSecondHr">
+                        <hr>
                         <div class="accoutTournaments">
                             <h4>Mes Tournois :</h4>
                         </div>

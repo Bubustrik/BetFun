@@ -19,6 +19,18 @@
                                         <label>Description du Paris : </label>
                                         <input type="text" name="description"/>
                                     </div>
+                                     <div class="col-lg-12" style="margin: 0; padding: 0;">
+                                        <label>Date de début : </label>
+                                        <input type="date" name="startdate"/>
+                                    </div>
+                                     <div class="col-lg-12" style="margin: 0; padding: 0;">
+                                        <label>Date de fin : </label>
+                                        <input type="date" name="enddate"/>
+                                    </div>
+                                     <div class="col-lg-12" style="margin: 0; padding: 0;">
+                                        <label>Date du paris : </label>
+                                        <input type="date" name="resultdate"/>
+                                    </div>
                                     
                                     <input class="validBut" type="submit" value="Créer un Paris">
                                     

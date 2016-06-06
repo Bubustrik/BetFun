@@ -29,11 +29,11 @@
                             </div>
                             <div class="col-lg-12" style="margin: 0; padding: 0;">
                                 <label>Password : </label>
-                                <input type="text" name="password"/>
+                                <input type="password" name="password"/>
                             </div>
                             <div class="col-lg-12" style="margin: 0; padding: 0;">
                                 <label>Confirmer password : </label>
-                                <input type="text" name="confirmatedPassword"/>
+                                <input type="password" name="confirmatedPassword"/>
                             </div>
                             <input class="validBut" type="submit" value="S'inscrire"/>
                             <br />

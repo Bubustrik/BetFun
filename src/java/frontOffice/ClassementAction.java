@@ -15,19 +15,19 @@ import model.Users;
  *
  * @author Julien
  */
-public class ClassementAction  extends ActionSupport {
-    
+public class ClassementAction extends ActionSupport {
+
     private List<Users> allUsers;
     private UserHelper helperUser;
-    
+
     @Override
     public String execute() throws Exception {
-       helperUser = new UserHelper();
-       allUsers = helperUser.getUserByClassements();
-       return SUCCESS;
+        return SUCCESS;
     }
-    
-    public List<Users> getAllUser() {
+
+    public List<Users> getAllUsers() {
+        helperUser = new UserHelper();
+        this.allUsers = helperUser.getUserByClassements();
         return allUsers;
     }
 }

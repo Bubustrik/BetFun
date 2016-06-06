@@ -246,7 +246,7 @@
                         <div class="container">
                         <h1>Tournament</h1>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-lg-12 col-md-8">
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">
                                                                               

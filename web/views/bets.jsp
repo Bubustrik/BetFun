@@ -2,7 +2,9 @@
         <%@page import="frontOffice.AllParisAction"%>
         <!-- Import header -->
         <%@include file="templates/header.jsp" %>
-        
+        <script>
+            toastr.success('Bienvenue Quentin !');
+        </script>
         <section id="2ndSect" class="homeSection">
             <div class="container windowBets">
                 <div class="row">

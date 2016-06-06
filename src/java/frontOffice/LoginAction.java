@@ -36,6 +36,7 @@ public class LoginAction extends ActionSupport {
                     session.put("User", user);
                     session.put("Logined", "true");
                     session.put("context", new Date());
+                    
                     return SUCCESS;   
             }
         }

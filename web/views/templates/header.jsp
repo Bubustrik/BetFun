@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="resources/css/account.less" type="text/css" media="screen" />
         <link rel="stylesheet" href="resources/css/bets.less" type="text/css" media="screen" />
         <link rel="stylesheet" href="resources/css/ranking.less" type="text/css" media="screen" />
+        <link rel="stylesheet" href="resources/css/tournaments.less" type="text/css" media="screen" />
         <link rel="stylesheet" href="resources/css/toastr.css" type="text/css" media="screen" />
         <script src="resources/js/jquery-1.12.4.min.js"></script>
         <script src="resources/js/toastr.js"></script>

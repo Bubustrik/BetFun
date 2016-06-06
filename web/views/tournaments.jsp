@@ -4,43 +4,41 @@
         
         <section id="3rdSect" class="homeSection">
             <div class="homePict2">
-                <div class="container homeContSecond">
+                <div class="container tournamentsCont">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2>LES TOURNOIS</h2>
+                            <h1>LES TOURNOIS</h1>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 homeEncartSecond">
+                        <div class="col-lg-12 col-md-12 col-sm-12 mainDiv">
 
                             <s:iterator value="allTournaments">
-                                <div class="homeEncardTournois">
-
-                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                        <p style="color:red;font-weight : bold;">
-                                            Tournoi : <br> 
-                                        <p class="text-decoration: underline;"><s:property value="name"/></p>
-                                                                          </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                        <p>
-                                            <s:property value="description"/>
-                                        </p>
+                                <a href="#" type="button">
+                                    <div class="encardTournois">
+                                        <div class="col-lg-12 titleTournament">
+                                            <h4>TOURNOIS : <s:property value="name"/></h4>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <p><s:property value="description"/></p>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="col-lg-4">
+                                                <p class="dateTourn">
+                                                    Start Date : <s:property value="startDate"/>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <p class="dateTourn">
+                                                    End Date : <s:property value="EndDate"/>
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <p class="dateTourn">
+                                                    Result Date : <s:property value="ResultDate"/>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                        <p>
-                                            Start Date : <s:property value="startDate"/><br>
-                                            End Date : <s:property value="EndDate"/>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
-                                        Result Date : <s:property value="ResultDate"/>
-                                    </div>
-                                    <div class="col-lg-12 col-md-4 col-sm-4 col-xs-4">
-                                        <form action="#">
-                                            <input class="btn-lg validBut" type="submit" value="Details">
-                                        </form>
-                                    </div>
-                                    <br><br>
-                                </div>
-                               
+                                </a>
                             </s:iterator>
                         </div>
                     </div>

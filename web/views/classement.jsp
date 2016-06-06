@@ -23,7 +23,7 @@
                                     <td class="tdNone col-lg-4"></td>
                                 </tr>
                                 <s:iterator value="allUsers">
-                                <tr>
+                                <tr class="cool">
                                     <td class="col-lg-4"><p> <s:property value="Lastname"/> </p></td>
                                     <td class="col-lg-4"><p> <s:property value="Firstname"/> </p></td>
                                     <td class="col-lg-4"><p> <s:property value="Scores"/> </p></td>

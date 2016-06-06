@@ -6,10 +6,13 @@
 package frontOffice;
 
 import static com.opensymphony.xwork2.Action.SUCCESS;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import helper.MatchsHelper;
 import java.util.List;
+import java.util.Map;
 import model.Matchs;
+import model.Users;
 
 /**
  *
@@ -30,4 +33,5 @@ public class AllParisAction extends ActionSupport {
         this.allMatchs = helperMatchs.getAllMatchs();
         return allMatchs;
     }
+    
 }

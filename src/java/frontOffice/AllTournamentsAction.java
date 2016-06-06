@@ -17,7 +17,7 @@ import model.Tournaments;
  */
 public class AllTournamentsAction extends ActionSupport
 {
-    private Tournaments tournaments = new Tournaments();
+    private List<Tournaments> allTournaments;
     private TournamentsHelper helperTournaments;
     
     @Override
@@ -26,9 +26,8 @@ public class AllTournamentsAction extends ActionSupport
     }
     
     public List<Tournaments> getAllTournaments() {
-        List<Tournaments> allTournament;
         helperTournaments = new TournamentsHelper();
-        allTournament = helperTournaments.getAllTournaments();
-        return allTournament;
+        this.allTournaments = helperTournaments.getAllTournaments();
+        return allTournaments;
     }
 }

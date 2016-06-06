@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="resources/css/policy.less" type="text/css" media="screen" />
         <link rel="stylesheet" href="resources/css/sitemap.less" type="text/css" media="screen" />
         <link rel="stylesheet" href="resources/css/account.less" type="text/css" media="screen" />
+        <link rel="stylesheet" href="resources/css/bets.less" type="text/css" media="screen" />
+        <link rel="stylesheet" href="resources/css/ranking.less" type="text/css" media="screen" />
         
         <link rel="icon" type="image/x-icon" href="resources/images/betfunFlav.png" />
         

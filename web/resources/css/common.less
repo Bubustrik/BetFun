@@ -37,7 +37,6 @@ a {
 }
 
 .copyright {
-    //margin-top: 83px;
     padding-top: 83px;
     
 }
@@ -60,6 +59,8 @@ div .footer-list a {
     width: 100%;
     margin: 0;
     padding: 0px 10px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
 div .footer-list a:hover {
@@ -89,6 +90,44 @@ footer {
     height: inherit;
 }
 
+.headerBettun {
+    color: whitesmoke;
+}
+
+.headerBettun:hover {
+    color: whitesmoke;
+}
+
+.headerBetEncart {
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 8px;
+}
+
+.headerBetEncart li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.headerBetEncart > li > a {
+    color: whitesmoke;
+}
+
+.headerSelect {
+    float: right;
+    padding: 8px;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    color: whitesmoke;
+}
+
+.headerSelect:hover {
+    border: 1px solid whitesmoke;
+    background-color: rgba(0,0,0,0.4);
+}
+
 html {
     background-color: black;
 }
@@ -115,12 +154,6 @@ html {
 .homeFirstCont {
     padding-top: 9%;
     padding-bottom: 21%;
-}
-
-.homeContSecond h2 {
-    color: wheat;
-    text-align: center;
-    padding-bottom: 15px;
 }
 
 .homeEncardParis {
@@ -224,43 +257,8 @@ html {
     transition: all 0.4s ease-in-out;
 }
 
-.homeEncartSecond {
-    background-color: rgba(255,255,255,0.3);
-    height: 100%;
-    border-radius: 3px;
-    padding: 25px 25px 15px 25px;
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.homeEncartSecond:hover {
-    background-color: rgba(255,255,255,0.4);
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.homeEncardTournois a {
-    padding: 15px;
-    border: 1px solid wheat;
-}
-
-.homeEncardTournois a:hover {
-    color: black;
-    background-color: wheat;
-    text-decoration: none;
-    .homeEncardTournois {
-        border-color: wheat;
-    }
-}
-
-.homeEncardTournois p {
-    padding-top: 4px;
-}
-
 .homeInscription {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
     height: 100%;
     border-radius: 3px;
     -webkit-transition: all 0.5s ease-in-out;
@@ -269,7 +267,7 @@ html {
 }
 
 .homeInscription:hover {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -332,6 +330,7 @@ html {
 .homePict {
     background-image: url(../images/home.jpg);
     background-size: cover;
+    min-height: 970px;
     height: auto;
     max-width: 100%;
     background-repeat: no-repeat;
@@ -343,16 +342,29 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 90px;
+    min-height: 970px;
 }
 
 .homeSection {
     background-image: url(../images/pattern.png);
 }
 
+.homeSection3 {
+    background-image: url(../images/pattern2.png);
+}
+
 .imageMenu a img {
-    margin: 0px 0px 0px 2px;
-    padding: 4px;
-    height: 60px;
+    height: 50px;
+}
+
+.imageMenu a.logo {
+    margin: 0;
+    padding: 0;
+}
+
+.imageMenu a.logo:hover {
+    border: none;
+    background: none;
 }
 
 .imageFooter {
@@ -360,11 +372,26 @@ html {
     height: 125px;
     background-repeat: no-repeat;
     background-size: 44%;
-    //margin-left: 30px;
+}
+
+input.validBut {
+    width: 100%;
+    color: wheat;
+    border: 1px solid wheat;
+    padding: 5px 0px 5px 0px;
+    margin: 15px 0px 15px 0px;
+}
+
+input.validBut:hover {
+    color: black;
+    background-color: wheat;
+    border: 1px solid wheat;
+    
 }
 
 hr#InscriptSecondHr {
-    margin: 0;
+    margin-top: 68px;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -375,6 +402,7 @@ hr#InscriptSecondHr {
     margin: 0;
     background-color: rgba(0,0,0,0.4);
     display: -webkit-inline-box;
+    display: inline-box;
     
     header {
         width: 100%;
@@ -413,9 +441,6 @@ hr#InscriptSecondHr {
 }
 
 .nav li .btn:hover {
-    //background-color: rgba(250,250,250,0.9);
-    //color: #b8c7ce;
-    //color: black;
     border: 1px solid #b8c7ce;
 }
 
@@ -425,4 +450,20 @@ hr#InscriptSecondHr {
 
 .nav > li > a:hover {
     border: 1px solid rgba(0,0,0,0.2);
+}
+
+.signUpSect {
+    height: 970px;
+}
+
+.signUpPict {
+    background-image: url(../images/signup.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.signUpPict h1 {
+    font-size: 45px;
+    margin: -70px;
+    padding: 0;
 }

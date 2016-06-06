@@ -1,5 +1,4 @@
-
-<!-- Import header -->
+        <!-- Import header -->
         <%@include file="templates/header.jsp" %>
 
 
@@ -37,4 +36,4 @@
 
 
         <!-- Import footer -->
-        <%@include file="templates/footer.html" %>
+        <%@include file="templates/footer.jsp" %>

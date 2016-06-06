@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 10 mai 2016 11:15:03 by Hibernate Tools 4.3.1 -->
+<!-- Generated 3 juin 2016 13:43:03 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="model.Teams" table="Teams" catalog="betfun" optimistic-lock="version">
+    <class name="model.Teams" table="Teams" catalog="betfunpi_BetFun" optimistic-lock="version">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
             <generator class="identity" />
@@ -17,5 +17,13 @@
         <property name="dateCreation" type="timestamp">
             <column name="dateCreation" length="19" not-null="true" />
         </property>
+        <set name="userses" table="UserInTeam" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id" not-null="true" />
+            </key>
+            <many-to-many entity-name="model.Users">
+                <column name="id_Users" not-null="true" />
+            </many-to-many>
+        </set>
     </class>
 </hibernate-mapping>

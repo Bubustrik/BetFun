@@ -5,24 +5,79 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
-        <action name="Login" class="frontOffice.Login">
+    <package name="frontOffice" extends="struts-default" namespace="/">
+        <action name="Login" class="frontOffice.LoginAction" method="execute">
+            <result>/views/bets.jsp</result>
+            <result name="error">/views/login.jsp</result>
+        </action>
+        <action name="Logout" class="frontOffice.LogoutAction">
             <result>/views/login.jsp</result>
         </action>
-    </package>
-    
-    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
-        <action name="Home" class="frontOffice.Home">
-            <result>/views/home.jsp</result>
-        </action>
-    </package>
-    
-    <package name="frontOffice" namespace="/frontOffice" extends="struts-default">
-        <action name="Account" class="frontOffice.Account">
+        <action name="Account" class="frontOffice.AccountAction">
             <result>/views/account.jsp</result>
         </action>
+        <action name="Classement" class="frontOffice.ClassementAction">
+            <result>/views/classement.jsp</result>
+        </action>
+        <action name="Privacy">
+            <result>/views/policy.jsp</result>
+        </action>
+        <action name="Sitemap">
+            <result>/views/sitemap.jsp</result>
+        </action>
+        <action name="About">
+            <result>/views/about.jsp</result>
+        </action>
+        <action name="Tournament" class="frontOffice.AllTournamentsAction">
+            <result>/views/tournaments.jsp</result>
+        </action>
+        <action name="Paris" class="frontOffice.AllParisAction">
+            <result>/views/bets.jsp</result>
+        </action>
+        <action name="SignUp" class="frontOffice.SignUpAction" method="execute">
+            <result name="input">/views/signup.jsp</result>
+           <result>/views/login.jsp</result>
+        </action>
+        <action name="ChangePass" class="frontOffice.ChangePwdAction" method="execute">
+            <result name="input">/views/changePass.jsp</result>
+            <result>/views/login.jsp</result>
+        </action>
+        <action name="RecoverPass" class="frontOffice.RecoverPwdAction" method="execute">
+           <result name="input">/views/recoverPwd.jsp</result>
+           <result>/views/login.jsp</result>
+        </action>
+        <action name="CreateMatch" class="frontOffice.MatchFormAction" method="execute">
+           <result>/views/betForm.jsp</result>
+        </action>
     </package>
-    
-    
+   <!-- <package name="paris" extends="struts-default" namespace="/paris">
+        <action name="AllParis" class="frontOffice.AllParisAction">
+            <result>/views/AllParis.jsp</result>
+        </action>
+    </package>
+    <package name="Tournament" extends="struts-default" namespace="/tournaments">
+        <action name="Tournament" class="frontOffice.AllTournamentsAction">
+            <result>/views/tournaments.jsp</result>
+        </action>
+    </package>
+    <package name="group" extends="struts-default" namespace="/groups">
+        <action name="AllGroup" class="frontOffice.AllGroupsAction">
+            <result>/views/AllGroup.jsp</result>
+        </action>
+    </package>-->
+    <package name="backOffice" extends="struts-default" namespace="/Admin">
+        <action name="Admin" class="backOffice.AdministratorAction">
+            <result>/views/admin/index.jsp</result>
+        </action>
+        <action name="AdminUsers" class="backOffice.AllUsersAction">
+            <result>/views/admin/adminUser.jsp</result>
+        </action>
+        <action name="AdminParis" class="backOffice.AllUsersAction">
+            <result>/views/admin/adminParis.jsp</result>
+        </action>
+        <action name="AdminTournament" class="backOffice.AllUsersAction">
+            <result>/views/admin/adminTournament.jsp</result>
+        </action>
+    </package>
 </struts>
 

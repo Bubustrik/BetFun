@@ -62,20 +62,6 @@ public class UserHelperTest {
     }
 
     /**
-     * Test getUser
-     */
-    @Test
-    public void testGetUser_int() {
-        System.out.println("getUser : id=1");
-        int id = 1;
-        UserHelper instance = new UserHelper();
-        Users expResult = null;
-        Users result = instance.getUser(id);
-        assertEquals(expResult, result);
-        fail("Fail : getUser(1)");
-    }
-
-    /**
      * Test getPassword
      */
     @Test
@@ -97,7 +83,7 @@ public class UserHelperTest {
         System.out.println("saveOrUpdateUsers");
         Users users = null;
         UserHelper instance = new UserHelper();
-        instance.saveOrUpdateUsers(users);
+        instance.updateUsers(users);
         fail("Fail : SaveOrUpdateUsers=null");
     }
 

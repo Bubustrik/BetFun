@@ -28,9 +28,6 @@
         <action name="About">
             <result>/views/about.jsp</result>
         </action>
-        <action name="Admin" class="backOffice.AdministratorAction">
-            <result>/views/admin/index.jsp</result>
-        </action>
         <action name="Tournament" class="frontOffice.AllTournamentsAction">
             <result>/views/tournaments.jsp</result>
         </action>
@@ -68,12 +65,10 @@
             <result>/views/AllGroup.jsp</result>
         </action>
     </package>-->
-    <package name="backOffice" extends="struts-default" namespace="backOffice">
+    <package name="backOffice" extends="struts-default" namespace="Admin">
         <action name="Admin" class="backOffice.AdministratorAction">
             <result>/views/admin/index.jsp</result>
         </action>
-    </package>
-    <package name="backOffice" extends="struts-default" namespace="backOffice">
         <action name="AdminUsers" class="backOffice.AdministratorAction">
             <result>/views/admin/adminUser.jsp</result>
         </action>

@@ -10,7 +10,12 @@
         <link rel="stylesheet" href="resources/css/about.less" type="text/css" media="screen" />
         <link rel="stylesheet" href="resources/css/policy.less" type="text/css" media="screen" />
         <link rel="stylesheet" href="resources/css/sitemap.less" type="text/css" media="screen" />
-        
+        <link rel="stylesheet" href="resources/css/account.less" type="text/css" media="screen" />
+        <link rel="stylesheet" href="resources/css/bets.less" type="text/css" media="screen" />
+        <link rel="stylesheet" href="resources/css/ranking.less" type="text/css" media="screen" />
+        <link rel="stylesheet" href="resources/css/toastr.css" type="text/css" media="screen" />
+        <script src="resources/js/jquery-1.12.4.min.js"></script>
+        <script src="resources/js/toastr.js"></script>
         <link rel="icon" type="image/x-icon" href="resources/images/betfunFlav.png" />
         
         <%@ taglib prefix="s" uri="/struts-tags" %>
@@ -20,27 +25,30 @@
 
         <header>
             <div class="navbar navbar-fixed-top menu-top" role="navigation">
-                <div class="imageMenu">
-                    <a href="/BetFun/">
-                        <img src="resources/images/betfun.png"/>
-                    </a>
-                </div>
                 <div class="container contMenu">
                     <ul class="nav navbar-nav">
-                        <li>
-                            <a class="btn" href="#2ndSect">Paris</a>
+                        <li class="imageMenu">
+                            <a href="/BetFun/" class="logo">
+                                <img src="resources/images/betfun.png"/>
+                            </a>
                         </li>
                         <li>
-                            <a class="btn" href="#3rdSect">Tournois</a>
+                            <a class="btn" href="/BetFun/Paris">Paris</a>
                         </li>
                         <li>
-                            <a class="btn" href="#">Classement</a>
+                            <a class="btn" href="/BetFun/Tournament">Tournois</a>
+                        </li>
+                        <li>
+                            <a class="btn" href="/BetFun/Classement">Classement</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                       <li>
-                           <a type="button" class="btn" href="#">Mon compte</a>
-                       </li>
+                        <li>
+                            <a class="btn" href="/BetFun/Logout">Déconnexion</a>
+                        </li>
+                        <li>
+                            <a type="button" class="btn" href="/BetFun/Account">Mon compte</a>
+                        </li>
                    </ul>
                 </div>
                 <div class="clear"></div>

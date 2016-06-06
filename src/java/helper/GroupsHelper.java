@@ -33,8 +33,8 @@ public class GroupsHelper {
     
     public Groups getGroups(int id) {
         session.beginTransaction();
-        Groups groups = (Groups) session.createQuery("from Groups where id=" + id).uniqueResult();
-        session.getTransaction();
+        Groups groups = (Groups) session.createQuery("from Groups where id= " + id).uniqueResult();
+        session.close();
         return groups;
     }
     

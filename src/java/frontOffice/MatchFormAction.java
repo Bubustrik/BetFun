@@ -24,20 +24,22 @@ public class MatchFormAction extends ActionSupport {
 
     private String name;
     private String description;
-    private Date startDate;
-    private Date endDate;
-    private Date resultDate;
+    private Date startDate = new Date();
+    private Date endDate = new Date();
+    private Date resultDate = new Date();
 
     @Override
     public String execute() throws Exception {
-        Map session = ActionContext.getContext().getSession();
-        Users user = (Users) session.get("User");
-        MatchsHelper helperMatch = new MatchsHelper();
-        GroupsHelper helperGroups = new GroupsHelper();
-        Groups group = helperGroups.getGroups(1);
-        Matchs match = new Matchs(group, user, name, startDate, endDate, resultDate);
-        match.setDescription(description);
-        helperMatch.addMatch(match);
+        if (name != null) {
+            Map session = ActionContext.getContext().getSession();
+            Users user = (Users) session.get("User");
+            GroupsHelper helperGroup = new GroupsHelper();
+            Groups group = helperGroup.getGroups(1);
+            Matchs match = new Matchs(group, user, name, startDate, endDate, resultDate);
+            match.setDescription(description);
+            MatchsHelper helperMatch = new MatchsHelper();
+            helperMatch.addMatch(match);
+        }
         return SUCCESS;
     }
 

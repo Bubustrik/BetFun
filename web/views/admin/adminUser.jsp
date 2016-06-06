@@ -261,7 +261,9 @@
                                     <td class="col-lg-3"><p> Buirette </p></td>
                                     <td class="col-lg-3"><p> Quentin </p></td>
                                     <td class="col-lg-3"><p> Bloqué </p></td>
-                                    <td class="col-lg-3"><p>  </p></td>
+                                    <td class="col-lg-3">     <form action="demo_form.asp">
+                                            <input type="submit" value="Debloquer">
+                                        </form></td>
                                 </tr>         
                             </table>     
                         </div>

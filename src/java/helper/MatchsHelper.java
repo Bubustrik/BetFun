@@ -25,7 +25,7 @@ public class MatchsHelper {
      
     public List<Matchs> getAllMatchs () {
         session.beginTransaction();
-        List<Matchs> allMatchs = session.createQuery("from Matchs").list();
+        List<Matchs> allMatchs = session.createQuery("from Matchs order by endDate desc").list();
         session.getTransaction().commit();
         return allMatchs;
     }
